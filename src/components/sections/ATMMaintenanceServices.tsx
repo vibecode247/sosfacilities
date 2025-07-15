@@ -11,8 +11,8 @@ const ATMMaintenanceServices = () => {
   }, {
     icon: Shield,
     title: "Exterior Cleaning",
-    description: "Professional exterior maintenance and screen care",
-    details: ["Touch screen cleaning with anti-bacterial solutions", "Keypad cleaning and sanitization", "Exterior panel cleaning and polishing", "Branding and signage maintenance", "Weather protection checks"],
+    description: "Professional exterior upkeep for a clean and welcoming ATM frontage",
+    details: ["Dusting outer walls and corners", "Doors, handles, and frames cleaning", "Glass panel and window cleaning", "Staircase sweeping and scrubbing", "Branding and signboard cleaning"],
     backgroundImage: "/lovable-uploads/09b19526-e0bb-49e2-bcd1-0a87676c1673.png"
   }, {
     icon: Trash2,
