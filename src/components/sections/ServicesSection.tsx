@@ -11,7 +11,7 @@ const ServicesSection = () => {
     description: "Contract-based housekeeping staff for commercial properties.",
     icon: Users,
     image: "/lovable-uploads/470f93b0-1f9a-4376-ad97-b735458e77df.png",
-    features: ["Local & North-Indian", "Background verified", "Flexible scheduling"],
+    features: ["Trained professionals", "Background verified", "Flexible scheduling"],
     link: "/housekeeping"
   }, {
     title: "ATM Maintenance",
