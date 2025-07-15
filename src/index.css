@@ -1,0 +1,338 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom design system for SOS Facilities */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 230 57 70;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 29 53 87;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans;
+    scroll-behavior: smooth;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-md bg-white/10 border border-white/20 shadow-glass rounded-2xl;
+  }
+  
+  .neomorphism-card {
+    @apply bg-gray-50 rounded-3xl shadow-neomorphism;
+  }
+  
+  .neomorphism-button {
+    @apply bg-gray-50 rounded-2xl shadow-neomorphism hover:shadow-neomorphism-inset transition-all duration-300;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent;
+  }
+  
+  .hero-gradient {
+    @apply bg-gradient-to-br from-primary-50 via-white to-secondary-50;
+  }
+
+  .logo-gradient-animated {
+    background: linear-gradient(
+      90deg,
+      #e63946 0%,
+      #1d3557 25%,
+      #e63946 50%,
+      #1d3557 75%,
+      #e63946 100%
+    );
+    background-size: 300% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-move 3s ease-in-out infinite;
+  }
+}
+
+/* Floating animation for decorative elements */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+  66% {
+    transform: translateY(-10px) rotate(-3deg);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Moving gradient animation */
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Enhanced marquee animations with variable speeds and better easing */
+@keyframes marquee-left-fast {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right-fast {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes marquee-left-medium {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right-medium {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes marquee-left-slow {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right-slow {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Fast Speed Classes - 12s duration */
+.animate-marquee-left-fast {
+  animation: marquee-left-fast 12s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  will-change: transform;
+}
+
+.animate-marquee-right-fast {
+  animation: marquee-right-fast 12s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  will-change: transform;
+}
+
+/* Medium Speed Classes - 18s duration */
+.animate-marquee-left-medium {
+  animation: marquee-left-medium 18s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  will-change: transform;
+}
+
+.animate-marquee-right-medium {
+  animation: marquee-right-medium 18s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  will-change: transform;
+}
+
+/* Slow Speed Classes - 25s duration */
+.animate-marquee-left-slow {
+  animation: marquee-left-slow 25s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  will-change: transform;
+}
+
+.animate-marquee-right-slow {
+  animation: marquee-right-slow 25s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  will-change: transform;
+}
+
+/* Original speed classes for backward compatibility */
+.animate-marquee-left {
+  animation: marquee-left-medium 18s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  will-change: transform;
+}
+
+.animate-marquee-right {
+  animation: marquee-right-medium 18s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  will-change: transform;
+}
+
+/* Pause animation on hover with smooth transition */
+.animate-marquee-left-fast:hover,
+.animate-marquee-right-fast:hover,
+.animate-marquee-left-medium:hover,
+.animate-marquee-right-medium:hover,
+.animate-marquee-left-slow:hover,
+.animate-marquee-right-slow:hover,
+.animate-marquee-left:hover,
+.animate-marquee-right:hover {
+  animation-play-state: paused;
+}
+
+/* Responsive marquee speeds */
+@media (max-width: 1024px) {
+  .animate-marquee-left-fast {
+    animation-duration: 10s;
+  }
+  
+  .animate-marquee-right-fast {
+    animation-duration: 10s;
+  }
+  
+  .animate-marquee-left-medium {
+    animation-duration: 15s;
+  }
+  
+  .animate-marquee-right-medium {
+    animation-duration: 15s;
+  }
+  
+  .animate-marquee-left-slow {
+    animation-duration: 20s;
+  }
+  
+  .animate-marquee-right-slow {
+    animation-duration: 20s;
+  }
+  
+  .animate-marquee-left {
+    animation-duration: 15s;
+  }
+  
+  .animate-marquee-right {
+    animation-duration: 15s;
+  }
+}
+
+@media (max-width: 768px) {
+  .animate-marquee-left-fast {
+    animation-duration: 9s;
+  }
+  
+  .animate-marquee-right-fast {
+    animation-duration: 9s;
+  }
+  
+  .animate-marquee-left-medium {
+    animation-duration: 14s;
+  }
+  
+  .animate-marquee-right-medium {
+    animation-duration: 14s;
+  }
+  
+  .animate-marquee-left-slow {
+    animation-duration: 19s;
+  }
+  
+  .animate-marquee-right-slow {
+    animation-duration: 19s;
+  }
+  
+  .animate-marquee-left {
+    animation-duration: 14s;
+  }
+  
+  .animate-marquee-right {
+    animation-duration: 14s;
+  }
+}
+
+/* Reduced motion preference support */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee-left-fast,
+  .animate-marquee-right-fast,
+  .animate-marquee-left-medium,
+  .animate-marquee-right-medium,
+  .animate-marquee-left-slow,
+  .animate-marquee-right-slow,
+  .animate-marquee-left,
+  .animate-marquee-right {
+    animation-duration: 60s;
+    animation-timing-function: linear;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #e63946, #1d3557);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #dc2626, #0f172a);
+}
+
+/* Loading animations */
+@keyframes shimmer {
+  0% { background-position: -200px 0; }
+  100% { background-position: calc(200px + 100%) 0; }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #f0f0f0 0px, #e8e8e8 40px, #f0f0f0 80px);
+  background-size: 200px;
+  animation: shimmer 1.5s infinite;
+}
