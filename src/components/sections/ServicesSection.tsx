@@ -15,7 +15,7 @@ const ServicesSection = () => {
     link: "/housekeeping"
   }, {
     title: "ATM Maintenance",
-    description: "Contract-based cleaning services for ATM centers.",
+    description: "Contract-based professional cleaning services for ATM centers.",
     icon: Building,
     image: "/lovable-uploads/c94c9938-1a10-4d0e-9e3d-0e4d9ed68893.png",
     features: ["Scheduled Cleaning", "Verified Local Staffs", "Digital Daily Reports"],
