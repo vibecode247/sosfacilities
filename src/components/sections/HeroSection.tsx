@@ -24,7 +24,7 @@ const HeroSection = () => {
       {/* Hero Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in font-outfit">
-          Your Trusted Partner for <span className="bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent animate-pulse">Housekeeping</span> <span className="bg-gradient-to-r from-secondary-400 to-primary-400 bg-clip-text text-transparent animate-pulse">Workforce</span> Management
+          Your Trusted Partner for <span className="text-yellow-400 drop-shadow-lg animate-pulse">Housekeeping</span> <span className="text-orange-400 drop-shadow-lg animate-pulse">Workforce</span> Management
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90 animate-fade-in" style={{ animationDelay: '0.2s' }}>
          We recruit, employ, and manage housekeeping staffs.
