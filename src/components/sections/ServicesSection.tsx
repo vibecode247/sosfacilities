@@ -22,10 +22,10 @@ const ServicesSection = () => {
     link: "/atm-maintenance"
   }, {
     title: "Deep Cleaning",
-    description: "Comprehensive cleaning solutions for homes and offices with eco-friendly products.",
+    description: "High-detail cleaning for residential and commercial properties",
     icon: Sparkles,
     image: "/lovable-uploads/f5332c6e-828f-4a8e-89d7-01309f501ed8.png",
-    features: ["Eco-friendly products", "Professional equipment", "Detailed sanitization"],
+    features: ["Advanced Machinery", "Eco-friendly products", "Supervised Service"],
     link: "/deep-cleaning"
   }];
 
