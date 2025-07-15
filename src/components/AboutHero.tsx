@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -27,7 +26,7 @@ const AboutHero = () => {
               {/* Mobile: 2-line structure */}
               <span className="block md:hidden">
                 <span className="block">13+ Years of Excellence in Cleaning</span>
-                <span className="block text-primary-400 mt-2">in Cleaning</span>
+                
               </span>
               
               {/* Tablet: 2-line structure */}
