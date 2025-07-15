@@ -24,10 +24,10 @@ const HeroSection = () => {
       {/* Hero Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in font-outfit">
-          End-to-End Housekeeping Workforce Management
+          #1 Housekeeping and Manpower Solutions in Coimbatore
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          ISO 9001:2015 certified cleaning services with 13+ years of excellence. 
+         We recruit, deploy, and manage housekeeping staff so you don’t have to.
         </p>
         <div className="flex justify-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <Button 
