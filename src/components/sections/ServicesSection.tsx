@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const ServicesSection = () => {
   const services = [{
     title: "Housekeeping Workforce",
-    description: "Trained and reliable housekeeping staff for residential and commercial properties.",
+    description: "Contract-based housekeeping staff for commercial properties.",
     icon: Users,
     image: "/lovable-uploads/470f93b0-1f9a-4376-ad97-b735458e77df.png",
     features: ["Trained professionals", "Background verified", "Flexible scheduling"],
