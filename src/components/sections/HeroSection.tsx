@@ -24,7 +24,7 @@ const HeroSection = () => {
       {/* Hero Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in font-outfit">
-          Professional Cleaning
+          #1 Housekeeping Manpower Suppliers in Coimbatore
           <span className="block text-primary-300">Solutions in Coimbatore</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90 animate-fade-in" style={{ animationDelay: '0.2s' }}>
