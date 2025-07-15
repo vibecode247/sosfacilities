@@ -25,7 +25,7 @@ const AboutHero = () => {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in">
               {/* Mobile: 2-line structure */}
               <span className="block md:hidden">
-                <span className="block">13+ Years of Excellence in Cleaning</span>
+                <span className="block">13+ Years of Excellence</span>
                 
               </span>
               
