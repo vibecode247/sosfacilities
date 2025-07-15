@@ -17,8 +17,8 @@ const ATMMaintenanceServices = () => {
   }, {
     icon: Trash2,
     title: "Waste Management",
-    description: "Complete garbage removal inside and outside ATM",
-    details: ["Internal waste bin emptying", "External area garbage collection", "Receipt disposal management", "Surrounding area cleaning", "Sanitary waste handling"],
+    description: "Ensuring a clean, odor-free, and hygienic ATM environment",
+    details: ["Waste collection and bin disposal", "External area garbage collection", "Replacement of dustbin liners", "Eco-friendly disposal methods", "Odour control using fresheners"],
     backgroundImage: "/lovable-uploads/56dfadc0-ae1c-4f2d-bd64-9f24edccd25e.png"
   }];
   return <section className="py-20 bg-white">
