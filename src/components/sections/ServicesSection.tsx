@@ -7,13 +7,6 @@ import { Link } from 'react-router-dom';
 
 const ServicesSection = () => {
   const services = [{
-    title: "Deep Cleaning",
-    description: "Comprehensive cleaning solutions for homes and offices with eco-friendly products.",
-    icon: Sparkles,
-    image: "/lovable-uploads/f5332c6e-828f-4a8e-89d7-01309f501ed8.png",
-    features: ["Eco-friendly products", "Professional equipment", "Detailed sanitization"],
-    link: "/deep-cleaning"
-  }, {
     title: "Housekeeping Workforce",
     description: "Trained and reliable housekeeping staff for residential and commercial properties.",
     icon: Users,
@@ -27,6 +20,13 @@ const ServicesSection = () => {
     image: "/lovable-uploads/c94c9938-1a10-4d0e-9e3d-0e4d9ed68893.png",
     features: ["Security compliant", "Technical expertise", "24/7 availability"],
     link: "/atm-maintenance"
+  }, {
+    title: "Deep Cleaning",
+    description: "Comprehensive cleaning solutions for homes and offices with eco-friendly products.",
+    icon: Sparkles,
+    image: "/lovable-uploads/f5332c6e-828f-4a8e-89d7-01309f501ed8.png",
+    features: ["Eco-friendly products", "Professional equipment", "Detailed sanitization"],
+    link: "/deep-cleaning"
   }];
 
   return (
@@ -80,7 +80,7 @@ const ServicesSection = () => {
 
         {/* Tablet Layout */}
         <div className="hidden md:block lg:hidden">
-          {/* Deep Cleaning - Full Width */}
+          {/* Housekeeping Workforce - Full Width */}
           <div className="mb-8">
             {(() => {
               const IconComponent = services[0].icon;
@@ -119,7 +119,7 @@ const ServicesSection = () => {
             })()}
           </div>
 
-          {/* Housekeeping Workforce and ATM Maintenance - Two Columns */}
+          {/* ATM Maintenance and Deep Cleaning - Two Columns */}
           <div className="grid grid-cols-2 gap-8">
             {services.slice(1).map((service, index) => {
               const IconComponent = service.icon;
