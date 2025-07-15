@@ -47,14 +47,7 @@ const AboutHero = () => {
             animationDelay: '0.2s'
           }}>From a small family business in 2011 to Tamil Nadu's most trusted ISO 9001:2015 certified cleaning service provider. </p>
 
-            <div className="animate-fade-in md:mb-8 lg:mb-0" style={{
-            animationDelay: '0.4s'
-          }}>
-              <Button size="lg" className="bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 text-lg shadow-2xl hover:shadow-primary-500/25 transition-all duration-300">
-                <Users className="w-5 h-5 mr-2" />
-                Meet Our Team
-              </Button>
-            </div>
+            
           </div>
 
           {/* Right Visual - Organic Blob Shape */}
