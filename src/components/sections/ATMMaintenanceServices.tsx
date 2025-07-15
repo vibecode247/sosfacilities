@@ -24,7 +24,7 @@ const ATMMaintenanceServices = () => {
   return <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Booth &amp; Kiosk Care</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">ATM Care</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">Comprehensive cleaning and maintenance solutions for ATM center using Johnson Diversey products</p>
         </div>
 
