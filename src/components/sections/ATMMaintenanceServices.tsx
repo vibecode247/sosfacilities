@@ -5,8 +5,8 @@ const ATMMaintenanceServices = () => {
   const services = [{
     icon: CreditCard,
     title: "Interior Cleaning",
-    description: "Complete internal cleaning and sanitization",
-    details: ["Cash dispenser cleaning and maintenance", "Card reader cleaning and calibration", "Receipt printer cleaning and paper refill", "Internal component dusting and sanitization", "Garbage removal from cash compartment"],
+    description: "Complete internal ATM booth cleaning and hygiene maintenance",
+    details: ["High dusting of ceilings, walls, and lights", "Machine cleaning and disinfecting", "Screens and keypad sanitization", "Floor sweeping and wet mopping", "Interior glass and door panel"],
     backgroundImage: "/lovable-uploads/3122335d-d1bb-492d-8da0-e0d1b6505ecd.png"
   }, {
     icon: Shield,
