@@ -23,24 +23,7 @@ const AboutHero = () => {
           {/* Left Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left text-white order-2 lg:order-1">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fade-in">
-              {/* Mobile: 2-line structure */}
-              <span className="block md:hidden">
-                <span className="block">13+ Years of Excellence</span>
-                
-              </span>
-              
-              {/* Tablet: 2-line structure */}
-              <span className="hidden md:block lg:hidden">
-                <span className="block">13+ Years of Excellence</span>
-                <span className="block text-primary-400 mt-2">in Cleaning</span>
-              </span>
-              
-              {/* Desktop: Original 3-line structure */}
-              <span className="hidden lg:block">
-                13+ Years of
-                <span className="block text-primary-400 mt-2">Excellence</span>
-                in Cleaning
-              </span>
+              Where cleanliness meets commitment
             </h1>
             
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0 animate-fade-in" style={{
