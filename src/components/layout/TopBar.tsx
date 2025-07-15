@@ -10,7 +10,7 @@ const TopBar = () => {
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
               <Phone className="w-4 h-4 text-primary-400" />
-              <span>+91 90430 06004</span>
+              <span>+91 97916 16004</span>
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="w-4 h-4 text-primary-400" />

@@ -55,7 +55,7 @@ const ContactHero = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in md:mb-8 lg:mb-0" style={{
             animationDelay: '0.4s'
           }}>
-              <a href="tel:+919043006004">
+              <a href="tel:+919791616004">
                 <Button size="lg" className="w-full sm:w-auto bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 text-lg shadow-2xl hover:shadow-primary-500/25 transition-all duration-300">
                   <Phone className="w-5 h-5 mr-2" />
                   Call Now

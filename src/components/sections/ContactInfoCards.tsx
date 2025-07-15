@@ -8,7 +8,7 @@ const ContactInfoCards = () => {
     {
       icon: Phone,
       title: "Call Us",
-      detail: "+91 90430 06004",
+      detail: "+91 97916 16004",
       description: "Available 24/7 for emergencies"
     },
     {

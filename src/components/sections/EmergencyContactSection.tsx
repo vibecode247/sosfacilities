@@ -14,7 +14,7 @@ const EmergencyContactSection = () => {
           <p className="text-xl mb-8 opacity-90">
             We're available 24/7 for urgent cleaning requirements
           </p>
-          <a href="tel:+919043006004">
+          <a href="tel:+919791616004">
             <Button size="lg" className="bg-white text-secondary-500 hover:bg-gray-100 px-8 py-4 text-lg">
               <Phone className="w-5 h-5 mr-2" />
               Call Emergency Line

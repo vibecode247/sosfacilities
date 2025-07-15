@@ -36,9 +36,9 @@ const MobileMenu = ({ isOpen, navItems }: MobileMenuProps) => {
           </Link>
         ))}
         <div className="pt-4 mt-4 border-t border-gray-200">
-          <a href="tel:+919043006004" className="flex items-center space-x-3 text-gray-600 mb-4 p-2">
+          <a href="tel:+919791616004" className="flex items-center space-x-3 text-gray-600 mb-4 p-2">
             <Phone className="w-5 h-5 text-primary-500" />
-            <span className="font-medium">+91 90430 06004</span>
+            <span className="font-medium">+91 97916 16004</span>
           </a>
           <Button className="w-full bg-gradient-primary py-3 font-semibold">
             Get Quote
