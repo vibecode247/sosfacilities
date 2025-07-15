@@ -29,15 +29,6 @@ const HeroSection = () => {
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90 animate-fade-in" style={{ animationDelay: '0.2s' }}>
          We recruit, employ, and manage housekeeping staffs.
         </p>
-        <div className="flex justify-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          <Button 
-            size="lg" 
-            onClick={openQuoteModal}
-            className="bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 text-lg"
-          >
-            Get Free Quote
-          </Button>
-        </div>
       </div>
 
       {/* Floating Elements */}
