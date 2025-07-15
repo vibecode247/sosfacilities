@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { Phone, MessageSquare } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
 const ContactHero = () => {
-  return (
-    <section className="min-h-[80vh] bg-gradient-to-br from-slate-900 to-slate-800 relative overflow-hidden">
+  return <section className="min-h-[80vh] bg-gradient-to-br from-slate-900 to-slate-800 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-4 w-20 h-20 bg-primary-500/10 rounded-full blur-xl animate-float"></div>
@@ -48,14 +45,12 @@ const ContactHero = () => {
             
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0 animate-fade-in" style={{
             animationDelay: '0.2s'
-          }}>
-              Ready for professional cleaning services? Get your free quote today and experience the SOS difference with our 24/7 emergency support.
-            </p>
+          }}>Ready for professional housekeeping services? Get your free quote today and experience the SOS difference with our 24/7 emergency support.</p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in md:mb-8 lg:mb-0" style={{
             animationDelay: '0.4s'
           }}>
-              <a href="tel:+919791616004">
+              <a href="tel:+919043006004">
                 <Button size="lg" className="w-full sm:w-auto bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 text-lg shadow-2xl hover:shadow-primary-500/25 transition-all duration-300">
                   <Phone className="w-5 h-5 mr-2" />
                   Call Now
@@ -129,8 +124,6 @@ const ContactHero = () => {
 
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactHero;
