@@ -25,7 +25,7 @@ const ServicesSection = () => {
     description: "High-detail cleaning for residential and commercial properties",
     icon: Sparkles,
     image: "/lovable-uploads/f5332c6e-828f-4a8e-89d7-01309f501ed8.png",
-    features: ["Advanced Machinery", "Eco-friendly products", "Custom Cleaning Plans"],
+    features: ["Advanced Machinery", "Eco-friendly products", "Flexible Schedules"],
     link: "/deep-cleaning"
   }];
 
