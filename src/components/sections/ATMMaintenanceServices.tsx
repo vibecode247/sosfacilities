@@ -67,6 +67,7 @@ const ATMMaintenanceServices = () => {
           <Card className="overflow-hidden bg-gradient-primary text-white border-0">
             <CardContent className="p-8 text-center">
               <h3 className="text-3xl font-bold mb-4">Periodical Deep Cleaning</h3>
+              <div className="w-24 h-1 bg-white/80 mx-auto mb-6 rounded-full"></div>
               <p className="text-lg leading-relaxed opacity-90">
                 Scheduled deep cleaning to maintain hygiene and appearance of ATM booths. This includes intensive floor scrubbing, machine surface disinfection, glass polishing, and wall washing. Ideal for monthly or quarterly upkeep to prevent buildup of grime, stains, and odours. Enhances overall cleanliness and customer experience.
               </p>
