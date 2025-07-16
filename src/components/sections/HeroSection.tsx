@@ -23,8 +23,10 @@ const HeroSection = () => {
 
       {/* Hero Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in font-outfit">
-          Trusted Partner for <span className="text-yellow-400 drop-shadow-lg animate-pulse">Housekeeping Workforce</span> Management
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in font-outfit leading-tight">
+          Trusted Partner for<br />
+          <span className="text-yellow-400 drop-shadow-lg animate-pulse">Housekeeping Workforce</span><br />
+          Management
         </h1>
         
         {/* Decorative Separator */}
