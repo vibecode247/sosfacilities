@@ -54,7 +54,7 @@ const CounterSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4 font-outfit text-white">
             Our Track Record
           </h2>
-          <div className="w-24 h-1 bg-white mx-auto mb-4"></div>
+          <div className="w-24 h-px bg-white mx-auto mb-4"></div>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
             Years of dedicated service and thousands of satisfied customers across Tamil Nadu
           </p>
