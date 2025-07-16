@@ -5,9 +5,11 @@ const TrustSection = () => {
     <section className="py-16 bg-primary">
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white font-outfit">Why Choose SOS Facilities?</h2>
-          <p className="text-white/90 text-lg max-w-2xl mx-auto">Your trusted partner for comprehensive facility management solutions across Tamil Nadu</p>
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white font-outfit">Why Choose SOS Facilities?</h2>
+          <p className="text-xl text-white/90 max-w-2xl mx-auto">
+            Your trusted partner for comprehensive facility management solutions across Tamil Nadu
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
