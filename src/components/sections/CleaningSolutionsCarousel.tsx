@@ -217,9 +217,7 @@ const CleaningSolutionsCarousel = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 md:mb-6 gradient-text font-outfit">Our Portfolio</h2>
-          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-            Comprehensive cleaning solutions for every space and requirement
-          </p>
+          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">From basic housekeeping to specialized ATM maintenance</p>
         </div>
 
         <div className="relative max-w-7xl mx-auto" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
