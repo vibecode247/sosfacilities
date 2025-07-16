@@ -62,11 +62,11 @@ const CounterSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {counters.map((counter, index) => (
             <div key={index} className="text-center text-white flex flex-col items-center">
-              <div className="w-40 h-40 flex flex-col items-center justify-center bg-white/10 rounded-full border border-white/20">
-                <div className="text-4xl md:text-5xl font-bold mb-2 text-white font-mono tabular-nums">
+              <div className="bg-white/10 rounded-2xl border border-white/20 p-8 w-full max-w-xs flex flex-col items-center justify-center min-h-[200px]">
+                <div className="text-5xl md:text-6xl font-bold mb-4 text-white font-mono tabular-nums">
                   {counter.value}
                 </div>
-                <div className="text-lg opacity-90 text-center px-4">
+                <div className="text-lg opacity-90 text-center leading-tight">
                   {counter.label}
                 </div>
               </div>
