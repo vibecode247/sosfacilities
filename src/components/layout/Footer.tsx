@@ -18,9 +18,9 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Our Services</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/deep-cleaning" className="text-gray-300 hover:text-white transition-colors">Deep Cleaning</Link></li>
-              <li><Link to="/housekeeping" className="text-gray-300 hover:text-white transition-colors">Housekeeping Workforce</Link></li>
+              <li><Link to="/housekeeping" className="text-gray-300 hover:text-white transition-colors">Housekeeping Manpower</Link></li>
               <li><Link to="/atm-maintenance" className="text-gray-300 hover:text-white transition-colors">ATM Maintenance</Link></li>
+              <li><Link to="/deep-cleaning" className="text-gray-300 hover:text-white transition-colors">Deep Cleaning</Link></li>
             </ul>
           </div>
 
