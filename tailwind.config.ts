@@ -114,10 +114,6 @@ export default {
 					'50%': { backgroundPosition: '100% 100%' },
 					'75%': { backgroundPosition: '0% 100%' },
 					'100%': { backgroundPosition: '0% 0%' }
-				},
-				'wiggle': {
-					'0%, 100%': { transform: 'rotate(-3deg)' },
-					'50%': { transform: 'rotate(3deg)' }
 				}
 			},
 			animation: {
@@ -127,8 +123,7 @@ export default {
 				'float': 'float 3s ease-in-out infinite',
 				'gradient-move': 'gradient-move 4s ease-in-out infinite',
 				'gradient-pulse': 'gradient-pulse 3s ease-in-out infinite',
-				'gradient-wave': 'gradient-wave 6s ease-in-out infinite',
-				'wiggle': 'wiggle 1s ease-in-out infinite'
+				'gradient-wave': 'gradient-wave 6s ease-in-out infinite'
 			}
 		}
 	},
