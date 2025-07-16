@@ -43,9 +43,9 @@ const TrustSection = () => {
               <div className="w-16 h-16 bg-white/10 border-2 border-white/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-105 group-hover:bg-white/20 transition-all duration-300">
                 <Award className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 font-outfit">ISO Certified</h3>
+              <h3 className="text-2xl font-bold mb-4 font-outfit">MSME Certified</h3>
               <p className="text-white/90 leading-relaxed">
-                ISO 9001:2015 and BNI recommended for quality assurance
+                ISO 9001:2015 and BNI recommended 
               </p>
             </div>
           </div>
