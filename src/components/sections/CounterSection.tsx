@@ -5,7 +5,7 @@ import { useCounterAnimation } from '@/hooks/useCounterAnimation';
 const CounterSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const counter1 = useCounterAnimation(13, 2000, '+');
-  const counter2 = useCounterAnimation(200, 2500, '+');
+  const counter2 = useCounterAnimation(3000, 2500, '+');
   const counter3 = useCounterAnimation(3, 3000, 'K+');
 
   const counters = [
