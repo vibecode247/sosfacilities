@@ -20,7 +20,7 @@ const CounterSection = () => {
       startAnimation: counter2.startAnimation
     },
     {
-      label: "Satisfied Customers",
+      label: "Happy Customers",
       value: counter3.count,
       startAnimation: counter3.startAnimation
     }
