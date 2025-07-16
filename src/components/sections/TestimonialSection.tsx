@@ -117,6 +117,7 @@ const TestimonialSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white font-outfit">
             What Our Clients Say
           </h2>
+          <div className="w-24 h-1 bg-white mx-auto mb-4"></div>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
             Don't just take our word for it. Here's what our satisfied customers across Tamil Nadu have to say about our services.
           </p>
