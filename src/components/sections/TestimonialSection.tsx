@@ -109,26 +109,7 @@ const TestimonialSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
-      {/* Enhanced background decorative elements */}
-      <div className="absolute inset-0">
-        {/* Primary decorative circles */}
-        <div className="absolute top-20 left-10 w-40 h-40 bg-primary/20 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-20 right-10 w-48 h-48 bg-secondary/25 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-gradient-to-r from-primary/15 to-secondary/15 rounded-full blur-3xl animate-float" style={{ animationDelay: '1s' }}></div>
-        
-        {/* Additional accent elements */}
-        <div className="absolute top-32 right-1/4 w-24 h-24 bg-yellow-400/10 rounded-full blur-2xl"></div>
-        <div className="absolute bottom-32 left-1/4 w-32 h-32 bg-blue-400/10 rounded-full blur-2xl"></div>
-        
-        {/* Grid pattern overlay */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="w-full h-full" style={{
-            backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 0)',
-            backgroundSize: '50px 50px'
-          }}></div>
-        </div>
-      </div>
+    <section className="py-16 bg-primary">
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
