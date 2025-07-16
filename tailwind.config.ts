@@ -31,12 +31,12 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#e63946',
-					50: '#fef2f2',
-					100: '#fee2e2',
-					500: '#e63946',
-					600: '#dc2626',
-					foreground: '#ffffff'
+					DEFAULT: 'hsl(var(--primary))',
+					50: '#f0f8ff',
+					100: '#e0f2fe',
+					500: 'hsl(var(--primary))',
+					600: '#1e40af',
+					foreground: 'hsl(var(--primary-foreground))'
 				},
 				secondary: {
 					DEFAULT: '#1d3557',
