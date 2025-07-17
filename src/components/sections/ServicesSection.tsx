@@ -10,21 +10,21 @@ const ServicesSection = () => {
     title: "Housekeeping Workforce",
     description: "Contract-based housekeeping staff for commercial properties.",
     icon: Users,
-    image: "/lovable-uploads/470f93b0-1f9a-4376-ad97-b735458e77df.png",
+    image: "/lovable-uploads/158deec9-cf1c-4a50-a6cd-05abca91ccd1.png",
     features: ["Local & North-Indian", "Background Verified", "Immediate Replacement"],
     link: "/housekeeping"
   }, {
     title: "ATM Maintenance",
     description: "Contract-based professional cleaning services for ATM centers.",
     icon: Building,
-    image: "/lovable-uploads/c94c9938-1a10-4d0e-9e3d-0e4d9ed68893.png",
+    image: "/lovable-uploads/4a7ff3cd-5512-463e-a9f7-24ef151c20f7.png",
     features: ["Scheduled Cleaning", "Verified Local Staffs", "Digital Daily Reports"],
     link: "/atm-maintenance"
   }, {
     title: "Deep Cleaning",
     description: "High-detail cleaning for residential and commercial properties",
     icon: Sparkles,
-    image: "/lovable-uploads/f5332c6e-828f-4a8e-89d7-01309f501ed8.png",
+    image: "/lovable-uploads/2eb93ba1-27f1-488a-9103-66386cc825fa.png",
     features: ["Advanced Machinery", "Eco-friendly products", "Flexible Schedules"],
     link: "/deep-cleaning"
   }];
