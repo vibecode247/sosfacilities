@@ -15,6 +15,7 @@ const HousekeepingFAQ = () => {
     {
       question: "Are your housekeeping staff verified?",
       answer: "Yes, all our housekeeping staff undergo comprehensive background verification and double-checked before deployment"
+    },
     {
       question: "What are your pricing models for housekeeping staff?",
       answer: "We offer flexible pricing including hourly rates, monthly packages, and contract-based pricing for long-term requirements. Our rates are competitive and designed to be affordable for Tamil Nadu businesses and families, with transparent billing and no hidden costs."
