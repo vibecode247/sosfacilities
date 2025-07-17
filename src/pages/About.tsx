@@ -18,7 +18,7 @@ const About = () => {
               
               <p className="mb-4">SOS Facilities combine industry readiness, technology-enabled supervision, and process-driven service delivery to ensure your facilities remain spotless, safe, and professionally maintained — day in and day out.</p>
               
-              <p>With 13+ years of experience and a dedicated team of professionals, we continue to set new standards in the cleaning industry while maintaining our core values of integrity, excellence, and environmental responsibility.</p>
+              
             </div>
           </div>
         </div>
