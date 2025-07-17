@@ -6,9 +6,9 @@ import { Badge } from '@/components/ui/badge';
 
 const HousekeepingServiceAreas = () => {
   const serviceAreas = [{
-    title: "Commercial & Retail",
+    title: "Commercial Spaces",
     icon: Building2,
-    description: "Professional cleaning for commercial spaces",
+    description: "Professional housekeeping for commercial and retail spaces",
     areas: ["Malls & Theatres", "Showrooms & Shops", "Banks & Finances"],
     color: "#3B82F6",
     image: "/lovable-uploads/6f0c0ca8-8672-4775-8a7a-25ca087f0a4c.png",
@@ -17,7 +17,7 @@ const HousekeepingServiceAreas = () => {
   }, {
     title: "Corporate & IT Spaces",
     icon: Briefcase,
-    description: "Dedicated staff for corporate environments",
+    description: "Dedicated housekeeping staff for corporate environments",
     areas: ["Offices", "IT Parks", "Business Centers"],
     color: "#8B5CF6",
     image: "/lovable-uploads/b90be705-3d21-4ed1-8b5b-a13f96160f6f.png",
@@ -26,7 +26,7 @@ const HousekeepingServiceAreas = () => {
   }, {
     title: "Industries & Factories",
     icon: Factory,
-    description: "Industrial cleaning and maintenance",
+    description: "Industrial housekeeping and maintenance",
     areas: ["Factories", "Industries", "Warehouses"],
     color: "#F59E0B",
     image: "/lovable-uploads/890dad75-3795-4e84-bc08-f0a469a28fb2.png",
@@ -35,16 +35,16 @@ const HousekeepingServiceAreas = () => {
   }, {
     title: "Public & Convention Spaces",
     icon: MapPin,
-    description: "Large venue cleaning services",
+    description: "Large venue housekeeping services",
     areas: ["Government Buildings", "Auditoriums", "Cultural Halls"],
     color: "#10B981",
     image: "/lovable-uploads/57a4aaf0-a9ac-44aa-ab70-961a8dfcde65.png",
     staffCount: "80+",
     responseTime: "3-5 hrs"
   }, {
-    title: "Residential Spaces",
+    title: "Residential Societies",
     icon: Home,
-    description: "Home and community cleaning",
+    description: "Home and community housekeeping",
     areas: ["Apartments", "Villas", "Gated Communities"],
     color: "#EC4899",
     image: "/lovable-uploads/8b084a81-5adb-4497-81e1-4a5436cd6456.png",
@@ -53,7 +53,7 @@ const HousekeepingServiceAreas = () => {
   }, {
     title: "Healthcare Facilities",
     icon: Heart,
-    description: "Specialized medical facility cleaning",
+    description: "Specialized medical facility housekeeping",
     areas: ["Hospitals", "Clinics", "Medical Centers"],
     color: "#EF4444",
     image: "/lovable-uploads/7773c9ab-8afe-4570-b766-289c3458a3df.png",
@@ -71,7 +71,7 @@ const HousekeepingServiceAreas = () => {
   }, {
     title: "Hospitality Sector",
     icon: Coffee,
-    description: "Tourism and hospitality cleaning",
+    description: "Tourism and hospitality housekeeping",
     areas: ["Hotels", "Restaurants", "Resorts"],
     color: "#F59E0B",
     image: "/lovable-uploads/a6b6a17c-c433-4471-bc10-b9543721cfe0.png",
@@ -88,7 +88,7 @@ const HousekeepingServiceAreas = () => {
             On-demand Staffing
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Professional housekeeping workforce staffing for diverse industries and sectors
+            Professional housekeeping workforce solutions across diverse industries and sectors
           </p>
         </div>
 
