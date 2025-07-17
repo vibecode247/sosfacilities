@@ -15,7 +15,7 @@ const HousekeepingServiceAreas = () => {
   }, {
     title: "Corporate & IT Spaces",
     icon: Briefcase,
-    description: "Dedicated housekeeping staff for corporate environments",
+    description: "Housekeeping staff for corporate environments",
     areas: ["Offices", "IT Parks", "Business Centers"],
     color: "#8B5CF6",
     image: "/lovable-uploads/b90be705-3d21-4ed1-8b5b-a13f96160f6f.png"
