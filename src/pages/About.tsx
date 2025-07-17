@@ -16,7 +16,7 @@ const About = () => {
               
               <p className="mb-4">Our core strength lies in supplying well trained, background-verified, and uniformed manpower for daily housekeeping, janitorial, and deep-cleaning requirements across corporate offices, IT parks, banks, healthcare institutions, industrial premises, and residential societies. We follow standard operating procedures (SOPs) aligned with industry benchmarks to ensure hygienic, safe, and well-maintained environments.</p>
               
-              <p className="mb-4">Today, we proudly serve over 200 clients and have satisfied more than 3000 customers across various sectors including residential, commercial, and industrial spaces. Our expertise extends to specialized services like ATM maintenance, deep cleaning, and comprehensive housekeeping solutions.</p>
+              <p className="mb-4">SOS Facilities combine industry readiness, technology-enabled supervision, and process-driven service delivery to ensure your facilities remain spotless, safe, and professionally maintained — day in and day out.</p>
               
               <p>With 13+ years of experience and a dedicated team of professionals, we continue to set new standards in the cleaning industry while maintaining our core values of integrity, excellence, and environmental responsibility.</p>
             </div>
