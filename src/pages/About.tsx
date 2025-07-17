@@ -97,7 +97,7 @@ const About = () => {
                 </div>
                 <div className="flex flex-col items-center gap-3 bg-white/50 p-4 rounded-lg">
                   <div className="w-3 h-3 bg-primary rounded-full flex-shrink-0"></div>
-                  <p className="text-base text-gray-700">To make customers happy and satisfied</p>
+                  <p className="text-base text-gray-700">To make our customers happy and satisfied</p>
                 </div>
               </div>
             </div>
