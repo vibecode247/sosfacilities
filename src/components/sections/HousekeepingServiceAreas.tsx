@@ -1,9 +1,7 @@
-
 import React from 'react';
 import { Building2, Briefcase, Factory, MapPin, Home, Heart, GraduationCap, Coffee } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
-
 const HousekeepingServiceAreas = () => {
   const serviceAreas = [{
     title: "Commercial Spaces",
@@ -62,35 +60,23 @@ const HousekeepingServiceAreas = () => {
     color: "#F59E0B",
     image: "/lovable-uploads/a6b6a17c-c433-4471-bc10-b9543721cfe0.png"
   }];
-
-  return (
-    <section className="py-12 px-4 bg-white">
+  return <section className="py-12 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
             On-demand Staffing
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Professional housekeeping workforce solutions across diverse industries and sectors
-          </p>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto"> On-demand workforce solutions for every type of space — clean, compliant, and consistent.</p>
         </div>
 
         {/* Mobile-First Card Grid - Updated with 4 cards per row on desktop */}
         <div className="space-y-6 md:grid md:grid-cols-2 md:gap-6 md:space-y-0 lg:grid-cols-3 xl:grid-cols-4 xl:gap-8">
-          {serviceAreas.map((area, index) => (
-            <Card 
-              key={index} 
-              className="group overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white rounded-2xl"
-            >
+          {serviceAreas.map((area, index) => <Card key={index} className="group overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-white rounded-2xl">
               {/* Image Section */}
               <div className="relative">
                 <AspectRatio ratio={16 / 10}>
-                  <img 
-                    src={area.image} 
-                    alt={`${area.title} cleaning services`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+                  <img src={area.image} alt={`${area.title} cleaning services`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </AspectRatio>
                 
                 {/* Overlay Gradient */}
@@ -98,10 +84,9 @@ const HousekeepingServiceAreas = () => {
 
                 {/* Bottom Icon */}
                 <div className="absolute bottom-3 left-3">
-                  <div 
-                    className="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg backdrop-blur-sm"
-                    style={{ backgroundColor: `${area.color}90` }}
-                  >
+                  <div className="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg backdrop-blur-sm" style={{
+                backgroundColor: `${area.color}90`
+              }}>
                     <area.icon className="w-5 h-5 text-white" />
                   </div>
                 </div>
@@ -125,19 +110,13 @@ const HousekeepingServiceAreas = () => {
                     Coverage Areas
                   </h4>
                   <div className="flex flex-wrap gap-1">
-                    {area.areas.map((location, idx) => (
-                      <span 
-                        key={idx}
-                        className="inline-flex items-center text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full"
-                      >
+                    {area.areas.map((location, idx) => <span key={idx} className="inline-flex items-center text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded-full">
                         {location}
-                      </span>
-                    ))}
+                      </span>)}
                   </div>
                 </div>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Footer CTA */}
@@ -149,8 +128,6 @@ const HousekeepingServiceAreas = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HousekeepingServiceAreas;
