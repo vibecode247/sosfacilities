@@ -6,7 +6,7 @@ const HousekeepingFAQ = () => {
   const faqs = [
     {
       question: "What types of housekeeping staff do you provide?",
-      answer: "We provide trained housekeeping staff for various roles including office cleaners, residential helpers, industrial cleaners, hospital cleaning staff, and specialized deep cleaning teams. All our staff are experienced in handling Tamil Nadu's specific cleaning challenges like monsoon dampness and dust management."
+      answer: "We provide trained, local and North Indian housekeeping staff for various roles including office cleaners, residential helpers, industrial cleaners, hospital cleaning staff, and specialized deep cleaning teams. All our staff are experienced in handling Tamil Nadu's specific cleaning challenges like monsoon dampness and dust management."
     },
     {
       question: "How quickly can you deploy housekeeping staff?",
