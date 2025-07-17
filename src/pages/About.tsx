@@ -44,7 +44,7 @@ const About = () => {
             {/* Decorative Line */}
             
             
-            <h2 className="font-bold mb-8 gradient-text font-outfit md:text-5xl text-4xl">Our Vision</h2>
+            <h2 className="font-bold mb-8 gradient-text font-outfit md:text-5xl text-5xl">Our Vision</h2>
             
             {/* Vision Statement Card */}
             <div className="max-w-5xl mx-auto">
