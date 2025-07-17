@@ -42,11 +42,7 @@ const About = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center">
             {/* Decorative Line */}
-            <div className="flex items-center justify-center mb-8">
-              <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent w-24"></div>
-              <div className="mx-4 w-3 h-3 bg-primary rounded-full"></div>
-              <div className="h-px bg-gradient-to-r from-primary via-primary to-transparent w-24"></div>
-            </div>
+            
             
             <h2 className="text-4xl md:text-6xl font-bold mb-8 gradient-text font-outfit">Our Vision</h2>
             
@@ -58,9 +54,7 @@ const About = () => {
                 <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-primary/30 rounded-br-lg"></div>
                 
                 {/* Quote Icon */}
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-6">
-                  <div className="text-3xl text-primary font-serif">"</div>
-                </div>
+                
                 
                 <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-medium">
                   To be the most trusted facility and housekeeping workforce management company in Tamil Nadu — setting industry benchmarks in quality, safety, and customer satisfaction.
@@ -74,13 +68,7 @@ const About = () => {
             </div>
             
             {/* Bottom Decorative Elements */}
-            <div className="mt-12 flex justify-center space-x-4">
-              <div className="w-2 h-2 bg-primary/40 rounded-full"></div>
-              <div className="w-2 h-2 bg-primary/60 rounded-full"></div>
-              <div className="w-2 h-2 bg-primary rounded-full"></div>
-              <div className="w-2 h-2 bg-primary/60 rounded-full"></div>
-              <div className="w-2 h-2 bg-primary/40 rounded-full"></div>
-            </div>
+            
           </div>
         </div>
       </section>
