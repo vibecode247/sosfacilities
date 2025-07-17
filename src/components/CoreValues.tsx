@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Users, Cpu, Target, Clock, Shield } from 'lucide-react';
+import { Users, Cpu, Target, Clock, Shield, Lightbulb } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const CoreValues = () => {
@@ -44,6 +44,14 @@ const CoreValues = () => {
       gradient: 'from-indigo-500 to-blue-600',
       bgPattern: 'from-indigo-50/30 to-blue-50/20',
       titleHoverClass: 'group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-blue-600 group-hover:bg-clip-text group-hover:text-transparent'
+    },
+    {
+      icon: Lightbulb,
+      title: 'Innovation Excellence',
+      description: 'Continuously improving our processes and adopting eco-friendly solutions',
+      gradient: 'from-violet-500 to-purple-600',
+      bgPattern: 'from-violet-50/30 to-purple-50/20',
+      titleHoverClass: 'group-hover:bg-gradient-to-r group-hover:from-violet-500 group-hover:to-purple-600 group-hover:bg-clip-text group-hover:text-transparent'
     }
   ];
 
