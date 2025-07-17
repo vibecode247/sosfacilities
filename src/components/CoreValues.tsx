@@ -1,33 +1,49 @@
 
 import React from 'react';
-import { Shield, Star, Users } from 'lucide-react';
+import { Users, Cpu, Target, Clock, Shield } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const CoreValues = () => {
   const values = [
     {
-      icon: Shield,
-      title: 'Trust & Reliability',
-      description: 'We build trust through honest communication, transparent practices, and keeping our promises to every client. Our commitment to ethical business practices has been the foundation of our success for over 13 years.',
+      icon: Users,
+      title: 'People First',
+      description: 'We invest in our workforce with training, respect, and growth',
       gradient: 'from-blue-500 to-purple-600',
       bgPattern: 'from-blue-50/30 to-purple-50/20',
       titleHoverClass: 'group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-purple-600 group-hover:bg-clip-text group-hover:text-transparent'
     },
     {
-      icon: Star,
-      title: 'Quality Excellence',
-      description: 'We strive for perfection in every task, continuously improving our methods and exceeding expectations. Our ISO 9001:2015 certification reflects our unwavering commitment to quality standards.',
+      icon: Cpu,
+      title: 'Modern Methods',
+      description: 'We embrace tools and tech that raise cleaning standards',
       gradient: 'from-amber-500 to-orange-600',
       bgPattern: 'from-amber-50/30 to-orange-50/20',
       titleHoverClass: 'group-hover:bg-gradient-to-r group-hover:from-amber-500 group-hover:to-orange-600 group-hover:bg-clip-text group-hover:text-transparent'
     },
     {
-      icon: Users,
+      icon: Target,
       title: 'Customer Focus',
-      description: 'We embrace new technologies and methods to provide the most effective and efficient cleaning solutions. Our forward-thinking approach keeps us at the forefront of the industry.',
+      description: 'Tailored solutions for commercial, and residential environments',
       gradient: 'from-emerald-500 to-teal-600',
       bgPattern: 'from-emerald-50/30 to-teal-50/20',
       titleHoverClass: 'group-hover:bg-gradient-to-r group-hover:from-emerald-500 group-hover:to-teal-600 group-hover:bg-clip-text group-hover:text-transparent'
+    },
+    {
+      icon: Clock,
+      title: 'Service Reliability',
+      description: 'Uninterrupted manpower supply with shift-based coverage',
+      gradient: 'from-rose-500 to-pink-600',
+      bgPattern: 'from-rose-50/30 to-pink-50/20',
+      titleHoverClass: 'group-hover:bg-gradient-to-r group-hover:from-rose-500 group-hover:to-pink-600 group-hover:bg-clip-text group-hover:text-transparent'
+    },
+    {
+      icon: Shield,
+      title: 'Health & Safety',
+      description: 'Focus on hygienic, safe chemical usage, and PPE compliance',
+      gradient: 'from-indigo-500 to-blue-600',
+      bgPattern: 'from-indigo-50/30 to-blue-50/20',
+      titleHoverClass: 'group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-blue-600 group-hover:bg-clip-text group-hover:text-transparent'
     }
   ];
 
