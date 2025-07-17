@@ -35,7 +35,7 @@ const Housekeeping = () => {
     {
       icon: FileCheck,
       title: "Full Compliance",
-      description: "ESI, PF, invoices — all covered"
+      description: "ESI, PF and all govt statutory"
     }
   ];
 
