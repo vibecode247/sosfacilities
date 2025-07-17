@@ -6,16 +6,15 @@ const HousekeepingFAQ = () => {
   const faqs = [
     {
       question: "What types of housekeeping staff do you provide?",
-      answer: "We provide trained housekeeping staff for various roles including office cleaners, residential helpers, industrial cleaners, hospital cleaning staff, and specialized deep cleaning teams. All our staff are experienced in handling Tamil Nadu's specific cleaning challenges like monsoon dampness and dust management."
+      answer: "We provide trained local and North Indian housekeeping staff for various roles including office cleaners, residential helpers, industrial cleaners, hospital cleaning staff, and specialized deep cleaning teams. All our staff are experienced in handling Tamil Nadu's specific cleaning challenges like monsoon dampness and dust management."
     },
     {
       question: "How quickly can you deploy housekeeping staff?",
-      answer: "We can deploy housekeeping staff within 1-6 hours depending on your location and requirements. For residential spaces, we typically respond within 1-3 hours, while specialized industrial cleaning may take 4-6 hours to ensure proper team assembly."
+      answer: "We can deploy housekeeping staff within 1-3 days depending on your location and requirements while specialized industrial cleaning may take 4-6 days to ensure proper team assembly."
     },
     {
-      question: "Are your housekeeping staff trained and verified?",
-      answer: "Yes, all our housekeeping staff undergo comprehensive background verification, skills training, and are familiar with local Tamil and regional languages. They are trained in professional cleaning techniques, safety protocols, and customer service standards."
-    },
+      question: "Are your housekeeping staff verified?",
+      answer: "Yes, all our housekeeping staff undergo comprehensive background verification and double-checked before deployment"
     {
       question: "What are your pricing models for housekeeping staff?",
       answer: "We offer flexible pricing including hourly rates, monthly packages, and contract-based pricing for long-term requirements. Our rates are competitive and designed to be affordable for Tamil Nadu businesses and families, with transparent billing and no hidden costs."
@@ -26,7 +25,7 @@ const HousekeepingFAQ = () => {
     },
     {
       question: "Can I get housekeeping staff for both residential and commercial spaces?",
-      answer: "We don’t provide staff for individual homes. But we do offer housekeeping manpower for residential societies like apartments and gated communities, covering common areas, parking, lobbies, staircases, and more. Our staff are trained for specific environments."
+      answer: "Yes, we serve both residential homes, apartments, villas as well as commercial spaces like offices, IT parks, hospitals, schools, hotels, and industrial facilities across Tamil Nadu. Our staff are trained for specific environments."
     },
     {
       question: "What if I'm not satisfied with the housekeeping staff provided?",
