@@ -26,7 +26,7 @@ const HousekeepingFAQ = () => {
     },
     {
       question: "Can I get housekeeping staff for both residential and commercial spaces?",
-      answer: "Yes, we serve both residential homes, apartments, villas as well as commercial spaces like offices, IT parks, hospitals, schools, hotels, and industrial facilities across Tamil Nadu. Our staff are trained for specific environments."
+      answer: "We don’t provide staff for individual homes. But we do offer housekeeping manpower for residential societies like apartments and gated communities, covering common areas, parking, lobbies, staircases, and more. Our staff are trained for specific environments."
     },
     {
       question: "What if I'm not satisfied with the housekeeping staff provided?",
