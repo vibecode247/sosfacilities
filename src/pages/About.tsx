@@ -80,24 +80,24 @@ const About = () => {
               <p>To provide professional housekeeping and janitorial manpower services that meet the operational needs of businesses, institutions, and residences.</p>
             </div>
             
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-6xl mx-auto">
               <p className="text-lg font-semibold text-gray-700 mb-6">We are committed to:</p>
-              <div className="grid gap-4 text-left">
-                <div className="flex items-start gap-3 bg-white/50 p-4 rounded-lg">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-lg text-gray-700">To give trained, polite staff who work with care</p>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div className="flex flex-col items-center gap-3 bg-white/50 p-4 rounded-lg">
+                  <div className="w-3 h-3 bg-primary rounded-full flex-shrink-0"></div>
+                  <p className="text-base text-gray-700">To give trained, polite staff who work with care</p>
                 </div>
-                <div className="flex items-start gap-3 bg-white/50 p-4 rounded-lg">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-lg text-gray-700">To use good tools and safe cleaning products</p>
+                <div className="flex flex-col items-center gap-3 bg-white/50 p-4 rounded-lg">
+                  <div className="w-3 h-3 bg-primary rounded-full flex-shrink-0"></div>
+                  <p className="text-base text-gray-700">To use good tools and safe cleaning products</p>
                 </div>
-                <div className="flex items-start gap-3 bg-white/50 p-4 rounded-lg">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-lg text-gray-700">To always be on time and do what we promise</p>
+                <div className="flex flex-col items-center gap-3 bg-white/50 p-4 rounded-lg">
+                  <div className="w-3 h-3 bg-primary rounded-full flex-shrink-0"></div>
+                  <p className="text-base text-gray-700">To always be on time and do what we promise</p>
                 </div>
-                <div className="flex items-start gap-3 bg-white/50 p-4 rounded-lg">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-lg text-gray-700">To make customers feel satisfied and happy</p>
+                <div className="flex flex-col items-center gap-3 bg-white/50 p-4 rounded-lg">
+                  <div className="w-3 h-3 bg-primary rounded-full flex-shrink-0"></div>
+                  <p className="text-base text-gray-700">To make customers feel satisfied and happy</p>
                 </div>
               </div>
             </div>
