@@ -8,7 +8,7 @@ const HousekeepingServiceAreas = () => {
   const serviceAreas = [{
     title: "Commercial Spaces",
     icon: Building2,
-    description: "Professional housekeeping for commercial and retail spaces",
+    description: "Housekeeping for commercial and retail sector",
     areas: ["Malls & Theatres", "Showrooms & Shops", "Banks & Finances"],
     color: "#3B82F6",
     image: "/lovable-uploads/6f0c0ca8-8672-4775-8a7a-25ca087f0a4c.png"
