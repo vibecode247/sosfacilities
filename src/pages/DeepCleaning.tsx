@@ -28,8 +28,8 @@ const DeepCleaning = () => {
       {/* Benefits Section */}
       <DeepCleaningBenefits />
 
-      {/* Pricing Section */}
-      <PricingPackages />
+      {/* Pricing Section - Hidden */}
+      {/* <PricingPackages /> */}
 
       {/* FAQ Section */}
       <DeepCleaningFAQ />
