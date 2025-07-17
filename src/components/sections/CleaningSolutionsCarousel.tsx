@@ -251,9 +251,6 @@ const CleaningSolutionsCarousel = () => {
                           <h3 className="text-sm md:text-base lg:text-lg font-bold mb-1 md:mb-2 text-white group-hover:text-primary-100 transition-colors duration-300 line-clamp-2 font-outfit">
                             {solution.title}
                           </h3>
-                          <p className="text-white/90 text-xs md:text-sm leading-relaxed group-hover:text-white transition-colors duration-300 line-clamp-2">
-                            {solution.description}
-                          </p>
                         </div>
                       </div>
                       
