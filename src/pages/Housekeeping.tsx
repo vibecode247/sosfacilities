@@ -15,7 +15,7 @@ const Housekeeping = () => {
     {
       icon: Wrench,
       title: "Trained Workforce",
-      description: "Skilled Tamil & North Indian staff"
+      description: "Local & North Indian staff"
     },
     {
       icon: Clock,
