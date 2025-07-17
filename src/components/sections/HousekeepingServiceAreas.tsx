@@ -1,8 +1,8 @@
+
 import React from 'react';
 import { Building2, Briefcase, Factory, MapPin, Home, Heart, GraduationCap, Coffee } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
-import { Badge } from '@/components/ui/badge';
 
 const HousekeepingServiceAreas = () => {
   const serviceAreas = [{
@@ -11,72 +11,56 @@ const HousekeepingServiceAreas = () => {
     description: "Professional housekeeping for commercial and retail spaces",
     areas: ["Malls & Theatres", "Showrooms & Shops", "Banks & Finances"],
     color: "#3B82F6",
-    image: "/lovable-uploads/6f0c0ca8-8672-4775-8a7a-25ca087f0a4c.png",
-    staffCount: "150+",
-    responseTime: "2-4 hrs"
+    image: "/lovable-uploads/6f0c0ca8-8672-4775-8a7a-25ca087f0a4c.png"
   }, {
     title: "Corporate & IT Spaces",
     icon: Briefcase,
     description: "Dedicated housekeeping staff for corporate environments",
     areas: ["Offices", "IT Parks", "Business Centers"],
     color: "#8B5CF6",
-    image: "/lovable-uploads/b90be705-3d21-4ed1-8b5b-a13f96160f6f.png",
-    staffCount: "200+",
-    responseTime: "1-2 hrs"
+    image: "/lovable-uploads/b90be705-3d21-4ed1-8b5b-a13f96160f6f.png"
   }, {
     title: "Industries & Factories",
     icon: Factory,
     description: "Industrial housekeeping and maintenance",
     areas: ["Factories", "Industries", "Warehouses"],
     color: "#F59E0B",
-    image: "/lovable-uploads/890dad75-3795-4e84-bc08-f0a469a28fb2.png",
-    staffCount: "120+",
-    responseTime: "4-6 hrs"
+    image: "/lovable-uploads/890dad75-3795-4e84-bc08-f0a469a28fb2.png"
   }, {
     title: "Public & Convention Spaces",
     icon: MapPin,
     description: "Large venue housekeeping services",
     areas: ["Government Buildings", "Auditoriums", "Cultural Halls"],
     color: "#10B981",
-    image: "/lovable-uploads/57a4aaf0-a9ac-44aa-ab70-961a8dfcde65.png",
-    staffCount: "80+",
-    responseTime: "3-5 hrs"
+    image: "/lovable-uploads/57a4aaf0-a9ac-44aa-ab70-961a8dfcde65.png"
   }, {
     title: "Residential Societies",
     icon: Home,
     description: "Home and community housekeeping",
     areas: ["Apartments", "Villas", "Gated Communities"],
     color: "#EC4899",
-    image: "/lovable-uploads/8b084a81-5adb-4497-81e1-4a5436cd6456.png",
-    staffCount: "300+",
-    responseTime: "1-3 hrs"
+    image: "/lovable-uploads/8b084a81-5adb-4497-81e1-4a5436cd6456.png"
   }, {
     title: "Healthcare Facilities",
     icon: Heart,
     description: "Specialized medical facility housekeeping",
     areas: ["Hospitals", "Clinics", "Medical Centers"],
     color: "#EF4444",
-    image: "/lovable-uploads/7773c9ab-8afe-4570-b766-289c3458a3df.png",
-    staffCount: "90+",
-    responseTime: "1-2 hrs"
+    image: "/lovable-uploads/7773c9ab-8afe-4570-b766-289c3458a3df.png"
   }, {
     title: "Educational Institutions",
     icon: GraduationCap,
     description: "Educational environment maintenance",
     areas: ["Schools", "Colleges", "Universities"],
     color: "#6366F1",
-    image: "/lovable-uploads/59702afd-0777-4aff-bf06-6fa402136a9d.png",
-    staffCount: "180+",
-    responseTime: "2-4 hrs"
+    image: "/lovable-uploads/59702afd-0777-4aff-bf06-6fa402136a9d.png"
   }, {
     title: "Hospitality Sector",
     icon: Coffee,
     description: "Tourism and hospitality housekeeping",
     areas: ["Hotels", "Restaurants", "Resorts"],
     color: "#F59E0B",
-    image: "/lovable-uploads/a6b6a17c-c433-4471-bc10-b9543721cfe0.png",
-    staffCount: "250+",
-    responseTime: "1-2 hrs"
+    image: "/lovable-uploads/a6b6a17c-c433-4471-bc10-b9543721cfe0.png"
   }];
 
   return (
@@ -111,25 +95,6 @@ const HousekeepingServiceAreas = () => {
                 
                 {/* Overlay Gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
-                
-                {/* Top Badges */}
-                <div className="absolute top-3 left-3 right-3 flex justify-between items-start">
-                  <Badge 
-                    className="text-white text-xs font-medium px-2 py-1"
-                    style={{ backgroundColor: area.color }}
-                  >
-                    {area.staffCount} Staff
-                  </Badge>
-                  <div className="flex items-center space-x-1 bg-white/90 backdrop-blur-sm rounded-full px-2 py-1">
-                    <div 
-                      className="w-2 h-2 rounded-full animate-pulse"
-                      style={{ backgroundColor: area.color }}
-                    ></div>
-                    <span className="text-xs font-medium text-gray-700">
-                      {area.responseTime}
-                    </span>
-                  </div>
-                </div>
 
                 {/* Bottom Icon */}
                 <div className="absolute bottom-3 left-3">
