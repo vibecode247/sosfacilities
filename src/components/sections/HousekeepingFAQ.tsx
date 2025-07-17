@@ -13,8 +13,8 @@ const HousekeepingFAQ = () => {
       answer: "We can deploy housekeeping staff within 1-3 days depending on your location and requirements while specialized industrial cleaning may take 4-6 days to ensure proper team assembly."
     },
     {
-      question: "Are your housekeeping staff trained and verified?",
-      answer: "Yes, all our housekeeping staff undergo comprehensive background verification, skills training, and are familiar with local Tamil and regional languages. They are trained in professional cleaning techniques, safety protocols, and customer service standards."
+      question: "Are your housekeeping staff backgroung verified?",
+      answer: "Yes, all our housekeeping staff undergo comprehensive background and address verification and double-checked before deployment."
     },
     {
       question: "What are your pricing models for housekeeping staff?",
