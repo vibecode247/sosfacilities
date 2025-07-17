@@ -247,7 +247,7 @@ const CleaningSolutionsCarousel = () => {
                       </div>
                       
                       <div className="absolute inset-0 flex flex-col justify-end p-3 md:p-4 lg:p-6 z-10">
-                        <div className="bg-white/15 backdrop-blur-md rounded-lg md:rounded-xl p-3 md:p-4 border border-white/20 group-hover:bg-white/20 transition-all duration-300">
+                        <div className="bg-white/15 backdrop-blur-md rounded-lg md:rounded-xl p-3 md:p-4 border border-white/20 group-hover:bg-white/20 transition-all duration-300 py-0">
                           <h3 className="text-sm md:text-base lg:text-lg font-bold mb-1 md:mb-2 text-white group-hover:text-primary-100 transition-colors duration-300 line-clamp-2 font-outfit">
                             {solution.title}
                           </h3>
