@@ -67,7 +67,7 @@ const HousekeepingServiceAreas = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
             Expertise Across Industries
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto"> On-demand workforce solutions for every type of space — clean, compliant, and consistent.</p>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto"> On-demand housekeeping workforce solutions for every type of space — clean, compliant, and consistent.</p>
         </div>
 
         {/* Mobile-First Card Grid - Updated with 4 cards per row on desktop */}
