@@ -43,7 +43,7 @@ const Housekeeping = () => {
     <Layout>
       {/* Hero Section */}
       <ServiceHero 
-        title="Housekeeping Workforce"
+        title="Reliable Housekeeping Workforce for Every Sector"
         buttonText="Hire Staff Now"
       />
 
