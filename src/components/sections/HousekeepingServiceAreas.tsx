@@ -65,7 +65,7 @@ const HousekeepingServiceAreas = () => {
         {/* Header */}
         <div className="text-center mb-8">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
-            On-demand Staffing
+            Expertise Across Industries
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto"> On-demand workforce solutions for every type of space — clean, compliant, and consistent.</p>
         </div>
