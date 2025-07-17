@@ -56,7 +56,7 @@ const About = () => {
                 {/* Quote Icon */}
                 
                 
-                <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-medium">To be the most trusted facility and housekeeping workforce management company in Tamil Nadu — setting industry benchmarks.</p>
+                <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-medium">To be the most trusted facility and housekeeping workforce management company in Tamilnadu — setting industry benchmarks.</p>
                 
                 {/* Bottom Accent */}
                 <div className="mt-8 flex justify-center">
