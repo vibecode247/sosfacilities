@@ -6,11 +6,11 @@ const HousekeepingFAQ = () => {
   const faqs = [
     {
       question: "What types of housekeeping staff do you provide?",
-      answer: "We provide trained, local and North Indian housekeeping staff for various roles including office cleaners, residential helpers, industrial cleaners, hospital cleaning staff, and specialized deep cleaning teams. All our staff are experienced in handling Tamil Nadu's specific cleaning challenges like monsoon dampness and dust management."
+      answer: "We provide trained, local and North Indian housekeeping staff for various roles including office cleaners, residential helpers, industrial cleaners, hospital cleaning staff, and specialized deep cleaning teams."
     },
     {
       question: "How quickly can you deploy housekeeping staff?",
-      answer: "We can deploy housekeeping staff within 1-6 hours depending on your location and requirements. For residential spaces, we typically respond within 1-3 hours, while specialized industrial cleaning may take 4-6 hours to ensure proper team assembly."
+      answer: "We can deploy housekeeping staff within 1-3 days depending on your location and requirements while specialized industrial cleaning may take 4-6 days to ensure proper team assembly."
     },
     {
       question: "Are your housekeeping staff trained and verified?",
