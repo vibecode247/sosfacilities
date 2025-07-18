@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Users, Clock, Shield, CheckCircle, Star, Award, Wrench, Shirt, IndianRupee, FileCheck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -43,7 +44,7 @@ const Housekeeping = () => {
     <Layout>
       {/* Hero Section */}
       <ServiceHero 
-        title="Reliable Housekeeping Workforce for Every Sector"
+        title="Reliable Housekeeping Workforce for All Sector"
         buttonText="Hire Staff Now"
       />
 
