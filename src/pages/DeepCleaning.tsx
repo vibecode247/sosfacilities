@@ -14,7 +14,7 @@ const DeepCleaning = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <ServiceHero title="Intensive Deep Cleaning for All Sectors" buttonText="Get Free Estimate" />
+      <ServiceHero title="Intensive Deep Cleaning Services for All Sectors" buttonText="Get Free Estimate" />
 
       {/* Services Section */}
       <DeepCleaningServices />
