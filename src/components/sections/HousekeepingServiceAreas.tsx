@@ -124,7 +124,7 @@ const HousekeepingServiceAreas = () => {
           <p className="text-gray-600 mb-4">Need housekeeping staff for a different sector?</p>
           <div className="inline-flex items-center space-x-2 text-primary-500 font-semibold">
             <span>Contact us for customized solutions</span>
-            <div className="w-2 h-2 bg-primary-500 rounded-full animate-pulse"></div>
+            
           </div>
         </div>
       </div>
