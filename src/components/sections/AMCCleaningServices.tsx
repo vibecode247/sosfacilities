@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Building2, Users, Sparkles, Droplets, FloorPlan, WindowIcon } from 'lucide-react';
+import { Building2, Users, Sparkles, Droplets, LayoutGrid, RectangleHorizontal } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const AMCCleaningServices = () => {
@@ -34,14 +33,14 @@ const AMCCleaningServices = () => {
       backgroundImage: "/lovable-uploads/3122335d-d1bb-492d-8da0-e0d1b6505ecd.png"
     },
     {
-      icon: FloorPlan,
+      icon: LayoutGrid,
       title: "Floor Care & Polishing AMC",
       description: "Professional floor maintenance and restoration contracts",
       details: ["Regular floor polishing schedules", "Deep scrubbing and cleaning", "Marble and tile restoration", "Anti-slip treatment application", "Floor protection and sealing"],
       backgroundImage: "/lovable-uploads/09b19526-e0bb-49e2-bcd1-0a87676c1673.png"
     },
     {
-      icon: WindowIcon,
+      icon: RectangleHorizontal,
       title: "Window Cleaning AMC",
       description: "Annual contracts for comprehensive window and glass cleaning",
       details: ["High-rise window cleaning", "Interior and exterior glass", "Frame and sill cleaning", "Safety protocol compliance", "Weather-resistant scheduling"],

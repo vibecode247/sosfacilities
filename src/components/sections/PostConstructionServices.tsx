@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Trash2, Sparkles, WindowIcon, FloorPlan, Paintbrush, Lightbulb, Shield } from 'lucide-react';
+import { Trash2, Sparkles, RectangleHorizontal, LayoutGrid, Paintbrush, Lightbulb, Shield } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const PostConstructionServices = () => {
@@ -20,14 +19,14 @@ const PostConstructionServices = () => {
       backgroundImage: "/lovable-uploads/3122335d-d1bb-492d-8da0-e0d1b6505ecd.png"
     },
     {
-      icon: WindowIcon,
+      icon: RectangleHorizontal,
       title: "Window & Glass Cleaning",
       description: "Professional cleaning of all glass surfaces and window fixtures",
       details: ["Interior and exterior glass", "Window frame cleaning", "Sill and track cleaning", "Mirror and glass door cleaning", "Streak-free finish guarantee"],
       backgroundImage: "/lovable-uploads/09b19526-e0bb-49e2-bcd1-0a87676c1673.png"
     },
     {
-      icon: FloorPlan,
+      icon: LayoutGrid,
       title: "Floor Restoration & Cleaning",
       description: "Complete floor cleaning, polishing, and restoration services",
       details: ["Deep floor scrubbing", "Grout cleaning and sealing", "Floor polishing and waxing", "Carpet deep cleaning", "Anti-slip treatment application"],
