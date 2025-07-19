@@ -10,6 +10,8 @@ import About from "./pages/About";
 import DeepCleaning from "./pages/DeepCleaning";
 import Housekeeping from "./pages/Housekeeping";
 import ATMMaintenance from "./pages/ATMMaintenance";
+import AMCCorporates from "./pages/AMCCorporates";
+import PostConstruction from "./pages/PostConstruction";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import { QuoteModalProvider } from "./contexts/QuoteModalContext";
@@ -30,6 +32,8 @@ const AppContent = () => {
         <Route path="/deep-cleaning" element={<DeepCleaning />} />
         <Route path="/housekeeping" element={<Housekeeping />} />
         <Route path="/atm-maintenance" element={<ATMMaintenance />} />
+        <Route path="/amc-corporates" element={<AMCCorporates />} />
+        <Route path="/post-construction" element={<PostConstruction />} />
         <Route path="/contact" element={<Contact />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
