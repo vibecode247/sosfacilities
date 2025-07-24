@@ -73,16 +73,6 @@ const DeepCleaningServices = () => {
         name: "Exterior Cleaning",
         services: ["Signage Cleaning", "ACP Board Cleaning"]
       }]
-    }, {
-      title: "Post Construction Cleaning",
-      description: "Thorough cleanup after construction or renovation projects",
-      color: "bg-gradient-to-br from-indigo-500 to-indigo-600",
-      isImage: true,
-      imageUrl: "/lovable-uploads/68b243ac-e1c4-4a96-aa67-6587f9de753b.png",
-      details: [{
-        name: "Construction Cleanup",
-        services: ["Debris removal", "Dust elimination", "Surface polishing", "Final touch-ups"]
-      }]
     }
   ];
 
@@ -101,8 +91,6 @@ const DeepCleaningServices = () => {
         return "bg-purple-600/40";
       case "Signage & ACP Board Cleaning":
         return "bg-red-600/40";
-      case "Post Construction Cleaning":
-        return "bg-indigo-600/40";
       default:
         return "bg-primary-600/40";
     }
