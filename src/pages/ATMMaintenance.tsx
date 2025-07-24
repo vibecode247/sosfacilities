@@ -42,7 +42,7 @@ const ATMMaintenance = () => {
     <Layout>
       {/* Hero Section */}
       <ServiceHero 
-        title="Scheduled ATM Cleaing and Maintenance Services"
+        title="Scheduled ATM Centre Cleaning and Maintenance"
         buttonText="Get Service Quote"
       />
 
