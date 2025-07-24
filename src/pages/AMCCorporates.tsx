@@ -13,7 +13,7 @@ const AMCCorporates = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <ServiceHero title="Annual Maintenance Contracts for Corporate Cleaning Services" buttonText="Get AMC Proposal" />
+      <ServiceHero title="Annual Maintenance Contracts for Corporates" buttonText="Get AMC Proposal" />
 
       {/* Services Section */}
       <AMCCleaningServices />
