@@ -34,6 +34,11 @@ const Header = () => {
     { name: 'Contact', path: '/contact' }
   ];
 
+  // Filter out About and Contact for desktop navigation only
+  const desktopNavItems = navItems.filter(item => 
+    item.name !== 'About' && item.name !== 'Contact'
+  );
+
   return (
     <>
       <header className="sticky top-0 z-50 bg-white shadow-md border-b border-gray-200">
@@ -48,7 +53,7 @@ const Header = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
-              {navItems.map(item => (
+              {desktopNavItems.map(item => (
                 <Link 
                   key={item.name} 
                   to={item.path} 
