@@ -14,13 +14,13 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Services */}
+          {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Our Services</h3>
+            <h3 className="text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/housekeeping" className="text-gray-300 hover:text-white transition-colors">Housekeeping Manpower</Link></li>
-              <li><Link to="/atm-maintenance" className="text-gray-300 hover:text-white transition-colors">ATM Maintenance</Link></li>
-              <li><Link to="/deep-cleaning" className="text-gray-300 hover:text-white transition-colors">Deep Cleaning</Link></li>
+              <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">About</Link></li>
+              <li><Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link></li>
+              <li><Link to="#" className="text-gray-300 hover:text-white transition-colors">Sitemap</Link></li>
             </ul>
           </div>
 
