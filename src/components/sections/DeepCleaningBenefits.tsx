@@ -19,14 +19,6 @@ const DeepCleaningBenefits = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
-            The Deep Cleaning Transformation Story
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Where comprehensive restoration meets lasting cleanliness through specialized deep cleaning expertise
-          </p>
-        </div>
 
         <div className="max-w-5xl mx-auto">
           <div className="text-center p-8 bg-gradient-to-br from-primary-50 to-secondary-50 rounded-3xl">
