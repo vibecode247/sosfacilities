@@ -19,17 +19,14 @@ const DeepCleaning = () => {
       {/* Services Section */}
       <DeepCleaningServices />
 
-      {/* Client Showcase Section */}
-      <DeepCleaningClientShowcase />
-
-      {/* Process Section - Moved here from below Benefits */}
+      {/* Process Section */}
       <CleaningProcess />
 
       {/* Benefits Section */}
       <DeepCleaningBenefits />
 
-      {/* Pricing Section - Hidden */}
-      {/* <PricingPackages /> */}
+      {/* Client Showcase Section - Moved above FAQ */}
+      <DeepCleaningClientShowcase />
 
       {/* FAQ Section */}
       <DeepCleaningFAQ />
