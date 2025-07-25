@@ -76,8 +76,6 @@ const DeepCleaningServices = () => {
     }
   ];
 
-  const featuredService = mainServices[0];
-  const otherServices = mainServices.slice(1);
 
   const getOverlayColor = (serviceTitle: string) => {
     switch (serviceTitle) {
@@ -148,14 +146,9 @@ const DeepCleaningServices = () => {
         </div>
 
         <div className="max-w-6xl mx-auto">
-          {/* Featured Service - Full Width */}
-          <div className="mb-6 sm:mb-8">
-            {renderServiceCard(featuredService, 0)}
-          </div>
-
-          {/* Other Services - Responsive Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {otherServices.map((service, index) => renderServiceCard(service, index + 1))}
+          {/* All Services - Responsive Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {mainServices.map((service, index) => renderServiceCard(service, index))}
           </div>
         </div>
       </div>
