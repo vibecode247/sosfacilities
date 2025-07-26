@@ -7,7 +7,7 @@ const CoreValues = () => {
   const values = [
     {
       icon: Users,
-      title: 'People First',
+      title: 'Training First',
       description: 'We invest in our workforce with training, respect, and growth',
       gradient: 'from-blue-500 to-purple-600',
       bgPattern: 'from-blue-50/30 to-purple-50/20',
