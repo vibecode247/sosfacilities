@@ -223,7 +223,7 @@ const CleaningSolutionsCarousel = () => {
         <div className="relative max-w-7xl mx-auto" onMouseEnter={() => setIsPaused(true)} onMouseLeave={() => setIsPaused(false)} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
           <div className="relative overflow-hidden rounded-2xl md:rounded-3xl bg-gradient-to-br from-gray-50 to-white shadow-lg">
             {/* Navigation arrows positioned inside the carousel */}
-            <button onClick={prevSlide} disabled={currentSlide === 0} className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white disabled:bg-gray-100/80 disabled:cursor-not-allowed rounded-full p-2 md:p-3 shadow-lg transition-all duration-300 z-20 hover:scale-105 disabled:hover:scale-100 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 backdrop-blur-sm border border-white/20" aria-label="Previous slide">
+            <button onClick={prevSlide} disabled={currentSlide === 0} aria-label="Previous slide" className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white disabled:bg-gray-100/80 disabled:cursor-not-allowed rounded-full p-2 md:p-3 shadow-lg transition-all duration-300 z-20 hover:scale-105 disabled:hover:scale-100 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 backdrop-blur-sm border border-white/20 px-[3px] py-[3px]">
               <ChevronLeft className={`w-5 h-5 md:w-6 md:h-6 ${currentSlide === 0 ? 'text-gray-400' : 'text-secondary-500'}`} />
             </button>
             
