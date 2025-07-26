@@ -227,7 +227,7 @@ const CleaningSolutionsCarousel = () => {
               <ChevronLeft className={`w-5 h-5 md:w-6 md:h-6 ${currentSlide === 0 ? 'text-gray-400' : 'text-secondary-500'}`} />
             </button>
             
-            <button onClick={nextSlide} disabled={currentSlide === totalSlides - 1} className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white disabled:bg-gray-100/80 disabled:cursor-not-allowed rounded-full p-2 md:p-3 shadow-lg transition-all duration-300 z-20 hover:scale-105 disabled:hover:scale-100 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 backdrop-blur-sm border border-white/20" aria-label="Next slide">
+            <button onClick={nextSlide} disabled={currentSlide === totalSlides - 1} aria-label="Next slide" className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white disabled:bg-gray-100/80 disabled:cursor-not-allowed rounded-full p-2 md:p-3 shadow-lg transition-all duration-300 z-20 hover:scale-105 disabled:hover:scale-100 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 backdrop-blur-sm border border-white/20 px-[3px] py-[3px]">
               <ChevronRight className={`w-5 h-5 md:w-6 md:h-6 ${currentSlide === totalSlides - 1 ? 'text-gray-400' : 'text-secondary-500'}`} />
             </button>
 
