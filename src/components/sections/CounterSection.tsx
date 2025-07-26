@@ -48,7 +48,7 @@ const CounterSection = () => {
   }, [counter1.startAnimation, counter2.startAnimation, counter3.startAnimation]);
 
   return (
-    <section ref={sectionRef} className="py-16 bg-primary">
+    <section ref={sectionRef} className="py-16 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 font-outfit text-white">
