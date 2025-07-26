@@ -15,7 +15,7 @@ const CoreValues = () => {
     },
     {
       icon: Cpu,
-      title: 'Modern Methods',
+      title: 'Modern Tools',
       description: 'We embrace tools and tech that raise cleaning standards',
       gradient: 'from-amber-500 to-orange-600',
       bgPattern: 'from-amber-50/30 to-orange-50/20',
@@ -23,7 +23,7 @@ const CoreValues = () => {
     },
     {
       icon: Target,
-      title: 'Customer Focus',
+      title: 'Customer Preferences',
       description: 'Tailored solutions for commercial, and residential environments',
       gradient: 'from-emerald-500 to-teal-600',
       bgPattern: 'from-emerald-50/30 to-teal-50/20',
@@ -31,7 +31,7 @@ const CoreValues = () => {
     },
     {
       icon: Clock,
-      title: 'Service Reliability',
+      title: 'Year-Round Supply',
       description: 'Uninterrupted manpower supply with shift-based coverage',
       gradient: 'from-rose-500 to-pink-600',
       bgPattern: 'from-rose-50/30 to-pink-50/20',
@@ -39,7 +39,7 @@ const CoreValues = () => {
     },
     {
       icon: Shield,
-      title: 'Health & Safety',
+      title: 'Safety Protocols',
       description: 'Focus on hygienic, safe chemical usage, and PPE compliance',
       gradient: 'from-indigo-500 to-blue-600',
       bgPattern: 'from-indigo-50/30 to-blue-50/20',
@@ -47,7 +47,7 @@ const CoreValues = () => {
     },
     {
       icon: Lightbulb,
-      title: 'Innovation Excellence',
+      title: 'Continuous Improvement',
       description: 'Continuously improving our processes and adopting eco-friendly solutions',
       gradient: 'from-violet-500 to-purple-600',
       bgPattern: 'from-violet-50/30 to-purple-50/20',
