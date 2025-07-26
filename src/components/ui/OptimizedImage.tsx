@@ -126,7 +126,7 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
               isLoaded ? 'opacity-100' : 'opacity-0'
             )}
             loading={priority ? 'eager' : (lazy ? 'lazy' : 'eager')}
-            fetchPriority={priority ? 'high' : 'auto'}
+            {...(priority && { fetchpriority: 'high' })}
             {...props}
           />
         </>

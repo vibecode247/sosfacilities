@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight, Home, Wind, Building2, Fan, Sofa, Trees, WashingMachine, Bug, Car, Volume2, Archive, Palette, ChefHat, Square, Bed, DoorOpen, Layers, Monitor, Armchair } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import OptimizedImage from '@/components/ui/OptimizedImage';
+import { useImagePreloader } from '@/hooks/useImagePreloader';
+import { Skeleton } from '@/components/ui/skeleton';
 const CleaningSolutionsCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [screenSize, setScreenSize] = useState('desktop');
@@ -8,6 +11,7 @@ const CleaningSolutionsCarousel = () => {
   const [userInteracted, setUserInteracted] = useState(false);
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
+  const [imagesReadyForSlide, setImagesReadyForSlide] = useState(true);
   const userInteractionTimer = useRef<NodeJS.Timeout | null>(null);
   const cleaningSolutions = [{
     title: "Carpet Cleaning",
@@ -130,6 +134,16 @@ const CleaningSolutionsCarousel = () => {
     description: "Complete furniture care and maintenance",
     image: "/lovable-uploads/510ffe7c-1b42-4338-88fb-ce65fbd616c0.png"
   }];
+  
+  // Extract all image sources for preloading
+  const allImageSources = cleaningSolutions.map(solution => solution.image);
+  
+  // Use image preloader hook
+  const { preloadImages, isImageLoaded, loadedCount } = useImagePreloader({
+    imageSrcs: allImageSources,
+    priority: 8 // Preload first 8 images immediately
+  });
+  
   const itemsPerSlide = {
     mobile: 1,
     tablet: 2,
@@ -151,14 +165,30 @@ const CleaningSolutionsCarousel = () => {
   }, []);
   const currentItemsPerSlide = itemsPerSlide[screenSize];
   const totalSlides = Math.ceil(cleaningSolutions.length / currentItemsPerSlide);
+  
+  // Check if current slide images are loaded
   useEffect(() => {
-    if (isPaused || userInteracted) return;
+    const currentSlideItems = getCurrentSlideItems();
+    const allCurrentImagesLoaded = currentSlideItems.every(item => isImageLoaded(item.image));
+    setImagesReadyForSlide(allCurrentImagesLoaded);
+    
+    // Preload next slide images
+    const nextSlideIndex = (currentSlide + 1) % totalSlides;
+    const nextSlideStart = nextSlideIndex * currentItemsPerSlide;
+    const nextSlideItems = cleaningSolutions.slice(nextSlideStart, nextSlideStart + currentItemsPerSlide);
+    const nextSlideImages = nextSlideItems.map(item => item.image);
+    preloadImages(nextSlideImages);
+  }, [currentSlide, currentItemsPerSlide, isImageLoaded, preloadImages, totalSlides]);
+  
+  useEffect(() => {
+    if (isPaused || userInteracted || !imagesReadyForSlide) return;
+    
     const timer = setInterval(() => {
       setCurrentSlide(prev => (prev + 1) % totalSlides);
-    }, 2000); // Changed from 5000ms to 2000ms for faster auto-scroll
+    }, 4000); // Increased to 4 seconds for better image viewing
 
     return () => clearInterval(timer);
-  }, [totalSlides, isPaused, userInteracted]);
+  }, [totalSlides, isPaused, userInteracted, imagesReadyForSlide]);
   const handleUserInteraction = () => {
     setUserInteracted(true);
 
@@ -234,9 +264,25 @@ const CleaningSolutionsCarousel = () => {
             {/* Carousel content with padding to avoid arrow overlap */}
             <div className="px-12 md:px-16 lg:px-20 py-4 md:py-6 lg:py-8">
               <div className={`grid gap-4 md:gap-6 ${screenSize === 'mobile' ? 'grid-cols-1' : screenSize === 'tablet' ? 'grid-cols-2' : 'grid-cols-4'} grid-rows-1`}>
-                {getCurrentSlideItems().map((solution, index) => <Card key={`${currentSlide}-${index}`} className="group hover:shadow-xl transition-all duration-300 border-0 neomorphism-card overflow-hidden cursor-pointer">
+                 {getCurrentSlideItems().map((solution, index) => <Card key={`${currentSlide}-${index}`} className="group hover:shadow-xl transition-all duration-300 border-0 neomorphism-card overflow-hidden cursor-pointer">
                     <div className="relative aspect-square overflow-hidden">
-                      <img src={solution.image} alt={solution.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                      {!isImageLoaded(solution.image) ? (
+                        <div className="w-full h-full relative">
+                          <Skeleton className="w-full h-full absolute inset-0" />
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+                          </div>
+                        </div>
+                      ) : (
+                        <OptimizedImage
+                          src={solution.image}
+                          alt={solution.title}
+                          size="content"
+                          priority={index < 4} // Prioritize first 4 images
+                          lazy={false}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      )}
                       
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10 group-hover:from-black/75 transition-all duration-300"></div>
                       
