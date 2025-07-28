@@ -14,7 +14,7 @@ const ATMMaintenance = () => {
     {
       icon: Wrench,
       title: "Well-Trained Staff",
-      description: "Security-cleared professionals with specialized ATM training"
+      description: "Verified professionals with specialized ATM training"
     },
     {
       icon: Shirt,
