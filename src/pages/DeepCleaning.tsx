@@ -1,6 +1,8 @@
 
 import React from 'react';
 import Layout from '@/components/Layout';
+import SEO from '@/components/SEO';
+import { seoData } from '@/data/seoData';
 import ServiceHero from '@/components/ServiceHero';
 import DeepCleaningServices from '@/components/sections/DeepCleaningServices';
 import DeepCleaningBenefits from '@/components/sections/DeepCleaningBenefits';
@@ -13,6 +15,7 @@ import DeepCleaningClientShowcase from '@/components/sections/DeepCleaningClient
 const DeepCleaning = () => {
   return (
     <Layout>
+      <SEO {...seoData.deepCleaning} />
       {/* Hero Section */}
       <ServiceHero title="Intensive Deep Cleaning Solutions for All Sectors" buttonText="Get Free Estimate" />
 

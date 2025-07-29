@@ -1,6 +1,8 @@
 
 import React from 'react';
 import Layout from '@/components/Layout';
+import SEO from '@/components/SEO';
+import { seoData } from '@/data/seoData';
 import ServiceHero from '@/components/ServiceHero';
 import PostConstructionServices from '@/components/sections/PostConstructionServices';
 import PostConstructionBenefits from '@/components/sections/PostConstructionBenefits';
@@ -12,6 +14,7 @@ import PostConstructionClientShowcase from '@/components/sections/PostConstructi
 const PostConstruction = () => {
   return (
     <Layout>
+      <SEO {...seoData.postConstruction} />
       {/* Hero Section */}
       <ServiceHero title="Professional Post-Construction Deep Cleaning Services" buttonText="Get Cleaning Quote" />
 

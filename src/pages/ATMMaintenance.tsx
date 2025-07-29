@@ -3,6 +3,8 @@ import { Wrench, Clock, Shirt, IndianRupee, FileCheck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Layout from '@/components/Layout';
+import SEO from '@/components/SEO';
+import { seoData } from '@/data/seoData';
 import ServiceHero from '@/components/ServiceHero';
 import ATMMaintenanceServices from '@/components/sections/ATMMaintenanceServices';
 import ATMMaintenanceBenefits from '@/components/sections/ATMMaintenanceBenefits';
@@ -40,6 +42,7 @@ const ATMMaintenance = () => {
 
   return (
     <Layout>
+      <SEO {...seoData.atmMaintenance} />
       {/* Hero Section */}
       <ServiceHero 
         title="Scheduled ATM Centre Cleaning and Maintenance"

@@ -1,6 +1,8 @@
 
 import React from 'react';
 import Layout from '@/components/Layout';
+import SEO from '@/components/SEO';
+import { seoData } from '@/data/seoData';
 import ServiceHero from '@/components/ServiceHero';
 import AMCCleaningServices from '@/components/sections/AMCCleaningServices';
 import AMCCleaningBenefits from '@/components/sections/AMCCleaningBenefits';
@@ -12,6 +14,7 @@ import AMCCleaningClientShowcase from '@/components/sections/AMCCleaningClientSh
 const AMCCorporates = () => {
   return (
     <Layout>
+      <SEO {...seoData.amcCorporates} />
       {/* Hero Section */}
       <ServiceHero title="Annual Maintenance Contracts for Corporates" buttonText="Get AMC Proposal" />
 

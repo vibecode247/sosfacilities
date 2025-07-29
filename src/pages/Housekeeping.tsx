@@ -4,6 +4,8 @@ import { Users, Clock, Shield, CheckCircle, Star, Award, Wrench, Shirt, IndianRu
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import Layout from '@/components/Layout';
+import SEO from '@/components/SEO';
+import { seoData } from '@/data/seoData';
 import ServiceHero from '@/components/ServiceHero';
 import HousekeepingServiceAreas from '@/components/sections/HousekeepingServiceAreas';
 import BenefitsOfProfessionalCleaning from '@/components/sections/BenefitsOfProfessionalCleaning';
@@ -42,6 +44,7 @@ const Housekeeping = () => {
 
   return (
     <Layout>
+      <SEO {...seoData.housekeeping} />
       {/* Hero Section */}
       <ServiceHero 
         title="Reliable Housekeeping Workforce for All Sector"

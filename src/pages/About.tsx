@@ -1,5 +1,7 @@
 import React from 'react';
 import Layout from '@/components/Layout';
+import SEO from '@/components/SEO';
+import { seoData } from '@/data/seoData';
 import AboutHero from '@/components/AboutHero';
 import CoreValues from '@/components/CoreValues';
 const About = () => {
