@@ -40,18 +40,26 @@ export const useSEO = (seoData: SEOData) => {
     updateMetaTag('og:type', seoData.ogType || 'website', true);
     updateMetaTag('og:url', window.location.href, true);
     updateMetaTag('og:site_name', 'SOS Facilities', true);
+    updateMetaTag('og:locale', 'en_IN', true);
     
+    // Enhanced OG image with dimensions
     if (seoData.ogImage) {
       updateMetaTag('og:image', seoData.ogImage, true);
       updateMetaTag('og:image:alt', seoData.title, true);
+      updateMetaTag('og:image:width', '1200', true);
+      updateMetaTag('og:image:height', '630', true);
+      updateMetaTag('og:image:type', 'image/png', true);
     }
 
-    // Twitter Card tags
+    // Enhanced Twitter Card tags
     updateMetaTag('twitter:card', 'summary_large_image');
     updateMetaTag('twitter:title', seoData.title);
     updateMetaTag('twitter:description', seoData.description);
+    updateMetaTag('twitter:site', '@SOSFacilities');
+    updateMetaTag('twitter:creator', '@SOSFacilities');
     if (seoData.ogImage) {
       updateMetaTag('twitter:image', seoData.ogImage);
+      updateMetaTag('twitter:image:alt', seoData.title);
     }
 
     // Canonical URL
