@@ -29,8 +29,6 @@ const Header = () => {
     { name: 'Housekeeping Manpower', path: '/housekeeping' },
     { name: 'ATM Maintenance', path: '/atm-maintenance' },
     { name: 'Deep Cleaning', path: '/deep-cleaning' },
-    { name: 'AMC for Corporates', path: '/amc-corporates' },
-    { name: 'Post-Construction', path: '/post-construction' },
     { name: 'Contact', path: '/contact' }
   ];
 
