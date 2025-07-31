@@ -3,6 +3,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useQuoteModal } from '@/contexts/QuoteModalContext';
 
 interface NavItem {
   name: string;
@@ -16,6 +17,7 @@ interface MobileMenuProps {
 
 const MobileMenu = ({ isOpen, navItems }: MobileMenuProps) => {
   const location = useLocation();
+  const { openQuoteModal } = useQuoteModal();
 
   if (!isOpen) return null;
 
@@ -40,7 +42,10 @@ const MobileMenu = ({ isOpen, navItems }: MobileMenuProps) => {
             <Phone className="w-5 h-5 text-primary-500" />
             <span className="font-medium">+91 97916 16004</span>
           </a>
-          <Button className="w-full bg-gradient-primary py-3 font-semibold">
+          <Button 
+            onClick={openQuoteModal}
+            className="w-full bg-gradient-primary py-3 font-semibold"
+          >
             Get Quote
           </Button>
         </div>
