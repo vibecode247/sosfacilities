@@ -173,12 +173,14 @@ const CleaningSolutionsCarousel = () => {
     setImagesReadyForSlide(allCurrentImagesLoaded);
     
     // Preload next slide images
-    const nextSlideIndex = (currentSlide + 1) % totalSlides;
-    const nextSlideStart = nextSlideIndex * currentItemsPerSlide;
-    const nextSlideItems = cleaningSolutions.slice(nextSlideStart, nextSlideStart + currentItemsPerSlide);
-    const nextSlideImages = nextSlideItems.map(item => item.image);
-    preloadImages(nextSlideImages);
-  }, [currentSlide, currentItemsPerSlide, isImageLoaded, preloadImages, totalSlides]);
+    if (totalSlides > 0) {
+      const nextSlideIndex = (currentSlide + 1) % totalSlides;
+      const nextSlideStart = nextSlideIndex * currentItemsPerSlide;
+      const nextSlideItems = cleaningSolutions.slice(nextSlideStart, nextSlideStart + currentItemsPerSlide);
+      const nextSlideImages = nextSlideItems.map(item => item.image);
+      preloadImages(nextSlideImages);
+    }
+  }, [currentSlide, currentItemsPerSlide, totalSlides]); // Fixed: removed isImageLoaded and preloadImages from deps to prevent infinite loop
   
   useEffect(() => {
     if (isPaused || userInteracted || !imagesReadyForSlide) return;

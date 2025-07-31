@@ -1,12 +1,51 @@
 
 import React from 'react';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
 import { MessageSquare } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
+import { useToast } from '@/hooks/use-toast';
+import { contactFormSchema, type ContactFormData } from '@/schemas/formValidation';
 
 const ContactFormSection = () => {
+  const { toast } = useToast();
+  
+  const form = useForm<ContactFormData>({
+    resolver: zodResolver(contactFormSchema),
+    defaultValues: {
+      fullName: '',
+      email: '',
+      phone: '',
+      location: '',
+      serviceNeeded: '',
+      message: ''
+    }
+  });
+
+  const onSubmit = async (data: ContactFormData) => {
+    try {
+      // Simulate form submission
+      console.log('Contact form submitted:', data);
+      
+      toast({
+        title: "Message Sent",
+        description: "Thank you for your message. We'll get back to you soon!",
+      });
+      
+      form.reset();
+    } catch (error) {
+      toast({
+        title: "Failed to Send",
+        description: "Please try again or contact us directly.",
+        variant: "destructive",
+      });
+    }
+  };
+
   return (
     <section className="py-20 relative overflow-hidden">
       {/* Enhanced Background with distinctive patterns */}
@@ -79,64 +118,126 @@ const ContactFormSection = () => {
               <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-gradient-to-r from-transparent via-secondary-300 to-transparent"></div>
             </div>
 
-            <form className="space-y-6">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
-                <Input placeholder="Your full name" className="rounded-xl" />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                <Input type="email" placeholder="your.email@example.com" className="rounded-xl" />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
-                <Input type="tel" placeholder="+91 XXXXX XXXXX" className="rounded-xl" />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Location</label>
-                <Select>
-                  <SelectTrigger className="rounded-xl [&>svg]:mr-3">
-                    <SelectValue placeholder="Select your location" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="coimbatore">Coimbatore</SelectItem>
-                    <SelectItem value="chennai">Chennai</SelectItem>
-                    <SelectItem value="madurai">Madurai</SelectItem>
-                    <SelectItem value="trichy">Trichy</SelectItem>
-                    <SelectItem value="salem">Salem</SelectItem>
-                    <SelectItem value="erode">Erode</SelectItem>
-                    <SelectItem value="tirunelveli">Tirunelveli</SelectItem>
-                    <SelectItem value="vellore">Vellore</SelectItem>
-                    <SelectItem value="other">Other</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Service Needed</label>
-                <Select>
-                  <SelectTrigger className="rounded-xl [&>svg]:mr-3">
-                    <SelectValue placeholder="Select a service" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="deep-cleaning">Deep Cleaning</SelectItem>
-                    <SelectItem value="housekeeping">Housekeeping Workforce</SelectItem>
-                    <SelectItem value="atm-maintenance">ATM Maintenance</SelectItem>
-                    <SelectItem value="other">Other</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                <Textarea 
-                  placeholder="Tell us about your cleaning requirements..." 
-                  className="min-h-[120px] rounded-xl"
+            <Form {...form}>
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                <FormField
+                  control={form.control}
+                  name="fullName"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Full Name</FormLabel>
+                      <FormControl>
+                        <Input placeholder="Your full name" className="rounded-xl" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
                 />
-              </div>
-              <Button size="lg" className="w-full bg-gradient-primary hover:shadow-lg transition-all duration-300">
-                <MessageSquare className="w-5 h-5 mr-2" />
-                Send Message
-              </Button>
-            </form>
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Email</FormLabel>
+                      <FormControl>
+                        <Input type="email" placeholder="your.email@example.com" className="rounded-xl" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="phone"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Phone</FormLabel>
+                      <FormControl>
+                        <Input type="tel" placeholder="+91 XXXXX XXXXX" className="rounded-xl" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="location"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Location</FormLabel>
+                      <Select onValueChange={field.onChange} defaultValue={field.value}>
+                        <FormControl>
+                          <SelectTrigger className="rounded-xl [&>svg]:mr-3">
+                            <SelectValue placeholder="Select your location" />
+                          </SelectTrigger>
+                        </FormControl>
+                        <SelectContent>
+                          <SelectItem value="coimbatore">Coimbatore</SelectItem>
+                          <SelectItem value="chennai">Chennai</SelectItem>
+                          <SelectItem value="madurai">Madurai</SelectItem>
+                          <SelectItem value="trichy">Trichy</SelectItem>
+                          <SelectItem value="salem">Salem</SelectItem>
+                          <SelectItem value="erode">Erode</SelectItem>
+                          <SelectItem value="tirunelveli">Tirunelveli</SelectItem>
+                          <SelectItem value="vellore">Vellore</SelectItem>
+                          <SelectItem value="other">Other</SelectItem>
+                        </SelectContent>
+                      </Select>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="serviceNeeded"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Service Needed</FormLabel>
+                      <Select onValueChange={field.onChange} defaultValue={field.value}>
+                        <FormControl>
+                          <SelectTrigger className="rounded-xl [&>svg]:mr-3">
+                            <SelectValue placeholder="Select a service" />
+                          </SelectTrigger>
+                        </FormControl>
+                        <SelectContent>
+                          <SelectItem value="deep-cleaning">Deep Cleaning</SelectItem>
+                          <SelectItem value="housekeeping">Housekeeping Workforce</SelectItem>
+                          <SelectItem value="atm-maintenance">ATM Maintenance</SelectItem>
+                          <SelectItem value="other">Other</SelectItem>
+                        </SelectContent>
+                      </Select>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="message"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Message</FormLabel>
+                      <FormControl>
+                        <Textarea 
+                          placeholder="Tell us about your cleaning requirements..." 
+                          className="min-h-[120px] rounded-xl"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <Button 
+                  type="submit" 
+                  size="lg" 
+                  className="w-full bg-gradient-primary hover:shadow-lg transition-all duration-300"
+                  disabled={form.formState.isSubmitting}
+                >
+                  <MessageSquare className="w-5 h-5 mr-2" />
+                  {form.formState.isSubmitting ? 'Sending...' : 'Send Message'}
+                </Button>
+              </form>
+            </Form>
           </div>
         </div>
 
