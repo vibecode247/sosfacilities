@@ -14,8 +14,8 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
     headers: mode === 'development' ? {
       'X-Content-Type-Options': 'nosniff',
-      'X-Frame-Options': 'DENY',
-      'X-XSS-Protection': '1; mode=block'
+      'X-XSS-Protection': '1; mode=block',
+      'Content-Security-Policy': "frame-ancestors 'self' *.lovable.dev *.sandbox.lovable.dev;"
     } : undefined,
   },
   plugins: [

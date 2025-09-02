@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import Index from "./pages/Index";
@@ -32,6 +32,7 @@ const AppContent = () => {
         <Route path="/about" element={<About />} />
         <Route path="/deep-cleaning" element={<DeepCleaning />} />
         <Route path="/housekeeping-workforce" element={<Housekeeping />} />
+        <Route path="/housekeeping" element={<Navigate to="/housekeeping-workforce" replace />} />
         <Route path="/atm-maintenance" element={<ATMMaintenance />} />
         <Route path="/amc-corporates" element={<AMCCorporates />} />
         <Route path="/post-construction" element={<PostConstruction />} />
