@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 
 // Import SEO data (we'll need to create a JS version or parse the TS file)
 const baseUrl = 'https://sosfacilities.com';
-const defaultImage = `${baseUrl}/lovable-uploads/df96f02f-f6fe-4050-9658-4c4e2a7bfc6d.png`;
+const defaultImage = `${baseUrl}/lovable-uploads/221c335e-00c2-4342-899d-37cd33a3afdc.png`;
 
 const seoData = {
   home: {
