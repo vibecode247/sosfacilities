@@ -26,7 +26,7 @@ const Header = () => {
 
   const navItems = [
     { name: 'About', path: '/about' },
-    { name: 'Housekeeping Workforce', path: '/housekeeping' },
+    { name: 'Housekeeping Workforce', path: '/housekeeping-workforce' },
     { name: 'ATM Maintenance', path: '/atm-maintenance' },
     { name: 'Deep Cleaning', path: '/deep-cleaning' },
     { name: 'Contact', path: '/contact' }

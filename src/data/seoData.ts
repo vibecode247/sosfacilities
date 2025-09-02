@@ -30,7 +30,7 @@ export const seoData: Record<string, SEOData> = {
     description: 'Professional corporate housekeeping services with trained and verified staff for offices, hospitals, hotels, and commercial establishments in Coimbatore.',
     keywords: 'corporate housekeeping, office cleaning, trained housekeeping staff, commercial cleaning services Coimbatore',
     ogImage: defaultImage,
-    canonical: `${baseUrl}/housekeeping`
+    canonical: `${baseUrl}/housekeeping-workforce`
   },
   atmMaintenance: {
     title: 'ATM Cleaning & Maintenance Services | Security Cleared Staff | SOS Facilities',

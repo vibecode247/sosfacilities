@@ -12,7 +12,7 @@ const ServicesSection = () => {
     icon: Users,
     image: "/lovable-uploads/158deec9-cf1c-4a50-a6cd-05abca91ccd1.png",
     features: ["Local & North-Indian", "Background Verified", "Immediate Replacement"],
-    link: "/housekeeping"
+    link: "/housekeeping-workforce"
   }, {
     title: "ATM Maintenance",
     description: "Contract-based professional cleaning services for ATM centers.",
