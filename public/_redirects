@@ -1,0 +1,9 @@
+# Netlify redirects for SPA routing
+# This ensures that social media scrapers get the right HTML files
+# while users get the SPA experience
+
+# Housekeeping redirect
+/housekeeping /housekeeping-workforce 301
+
+# SPA fallback for client-side routing
+/* /index.html 200
