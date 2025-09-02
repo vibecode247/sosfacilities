@@ -6,62 +6,65 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Import SEO data (we'll need to create a JS version or parse the TS file)
+const baseUrl = 'https://sosfacilities.com';
+const defaultImage = `${baseUrl}/lovable-uploads/df96f02f-f6fe-4050-9658-4c4e2a7bfc6d.png`;
+
 const seoData = {
   home: {
     title: 'SOS Facilities - Professional Housekeeping & Cleaning Services in Coimbatore',
     description: 'Leading facility management company in Coimbatore offering professional housekeeping, deep cleaning, AMC services, and trained staff solutions since 2011.',
     keywords: 'housekeeping services Coimbatore, facility management, cleaning services, AMC cleaning, trained staff, post construction cleaning',
-    ogImage: 'https://sosfacilities.lovable.app/lovable-uploads/df96f02f-f6fe-4050-9658-4c4e2a7bfc6d.png',
-    canonical: 'https://sosfacilities.lovable.app/'
+    ogImage: defaultImage,
+    canonical: `${baseUrl}/`
   },
   about: {
     title: 'About SOS Facilities - Leading Facility Management Company Since 2011',
     description: 'Established in 2011, SOS Facilities is Coimbatore\'s trusted partner for comprehensive facility management, housekeeping, and cleaning services with trained professionals.',
     keywords: 'about SOS Facilities, facility management company, housekeeping company Coimbatore, cleaning company history',
-    ogImage: 'https://sosfacilities.lovable.app/lovable-uploads/df96f02f-f6fe-4050-9658-4c4e2a7bfc6d.png',
-    canonical: 'https://sosfacilities.lovable.app/about'
+    ogImage: defaultImage,
+    canonical: `${baseUrl}/about`
   },
   deepCleaning: {
     title: 'Professional Deep Cleaning Services in Coimbatore | SOS Facilities',
     description: 'Comprehensive deep cleaning services for offices, homes, and commercial spaces in Coimbatore. Expert team, advanced equipment, and eco-friendly solutions.',
     keywords: 'deep cleaning Coimbatore, intensive cleaning, office deep cleaning, home deep cleaning, commercial cleaning',
-    ogImage: 'https://sosfacilities.lovable.app/lovable-uploads/df96f02f-f6fe-4050-9658-4c4e2a7bfc6d.png',
-    canonical: 'https://sosfacilities.lovable.app/deep-cleaning'
+    ogImage: defaultImage,
+    canonical: `${baseUrl}/deep-cleaning`
   },
   housekeeping: {
     title: 'Corporate Housekeeping Services | Trained Staff | SOS Facilities',
     description: 'Professional corporate housekeeping services with trained and verified staff for offices, hospitals, hotels, and commercial establishments in Coimbatore.',
     keywords: 'corporate housekeeping, office cleaning, trained housekeeping staff, commercial cleaning services Coimbatore',
-    ogImage: 'https://sosfacilities.lovable.app/lovable-uploads/df96f02f-f6fe-4050-9658-4c4e2a7bfc6d.png',
-    canonical: 'https://sosfacilities.lovable.app/housekeeping-workforce'
+    ogImage: defaultImage,
+    canonical: `${baseUrl}/housekeeping-workforce`
   },
   atmMaintenance: {
     title: 'ATM Cleaning & Maintenance Services | Security Cleared Staff | SOS Facilities',
     description: 'Specialized ATM cleaning and maintenance services with security-cleared staff. Ensuring hygiene and functionality of ATM machines across Coimbatore.',
     keywords: 'ATM cleaning, ATM maintenance, security cleared staff, bank cleaning services, ATM hygiene',
-    ogImage: 'https://sosfacilities.lovable.app/lovable-uploads/df96f02f-f6fe-4050-9658-4c4e2a7bfc6d.png',
-    canonical: 'https://sosfacilities.lovable.app/atm-maintenance'
+    ogImage: defaultImage,
+    canonical: `${baseUrl}/atm-maintenance`
   },
   amcCorporates: {
     title: 'Annual Maintenance Contracts for Corporate Cleaning Services | SOS Facilities',
     description: 'Comprehensive AMC solutions for corporate cleaning and facility management. Cost-effective annual contracts with guaranteed service quality and trained staff.',
     keywords: 'AMC cleaning, annual maintenance contract, corporate AMC, facility management contract, cleaning AMC Coimbatore',
-    ogImage: 'https://sosfacilities.lovable.app/lovable-uploads/df96f02f-f6fe-4050-9658-4c4e2a7bfc6d.png',
-    canonical: 'https://sosfacilities.lovable.app/amc-corporates'
+    ogImage: defaultImage,
+    canonical: `${baseUrl}/amc-corporates`
   },
   postConstruction: {
     title: 'Post Construction Cleaning Services | Professional Deep Clean | SOS Facilities',
     description: 'Specialized post-construction cleaning services for new buildings, renovated spaces, and construction sites. Professional deep cleaning for move-in ready spaces.',
     keywords: 'post construction cleaning, building cleaning, renovation cleaning, construction site cleaning, move-in cleaning',
-    ogImage: 'https://sosfacilities.lovable.app/lovable-uploads/df96f02f-f6fe-4050-9658-4c4e2a7bfc6d.png',
-    canonical: 'https://sosfacilities.lovable.app/post-construction'
+    ogImage: defaultImage,
+    canonical: `${baseUrl}/post-construction`
   },
   contact: {
     title: 'Contact SOS Facilities - Get Quote for Cleaning Services in Coimbatore',
     description: 'Get in touch with SOS Facilities for professional cleaning and facility management services. Free quotes, emergency services, and expert consultation available.',
     keywords: 'contact SOS Facilities, cleaning services quote, facility management contact, Coimbatore cleaning company',
-    ogImage: 'https://sosfacilities.lovable.app/lovable-uploads/df96f02f-f6fe-4050-9658-4c4e2a7bfc6d.png',
-    canonical: 'https://sosfacilities.lovable.app/contact'
+    ogImage: defaultImage,
+    canonical: `${baseUrl}/contact`
   }
 };
 
@@ -136,11 +139,10 @@ function generateStaticHTML(route, seoKey) {
     <!-- Load fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=PT+Sans:wght@400;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <!-- Redirect to SPA -->
-    <meta http-equiv="refresh" content="0; url=/" />
+    <!-- Redirect to SPA for user navigation -->
     <script>
-      // Immediate redirect for better user experience
-      if (window.location.pathname !== '/') {
+      // Redirect users to the main SPA while preserving social scraper access
+      if (typeof window !== 'undefined' && window.navigator && !window.navigator.userAgent.includes('bot')) {
         window.location.replace('/');
       }
     </script>
@@ -165,21 +167,30 @@ function generateStaticPages() {
     fs.mkdirSync(distDir, { recursive: true });
   }
   
-  // Generate HTML files for each route
+  // Read the built index.html as a template
+  const builtIndexPath = path.join(distDir, 'index.html');
+  let builtIndexContent = '';
+  
+  if (fs.existsSync(builtIndexPath)) {
+    builtIndexContent = fs.readFileSync(builtIndexPath, 'utf8');
+  }
+  
+  // Generate HTML files for each route (except home)
   Object.entries(routes).forEach(([route, seoKey]) => {
+    if (route === '/') {
+      // Skip home page - don't overwrite the built index.html
+      console.log('Skipping home page to preserve built React app');
+      return;
+    }
+    
     const html = generateStaticHTML(route, seoKey);
     
-    if (route === '/') {
-      // Home page - create index.html
-      fs.writeFileSync(path.join(distDir, 'index.html'), html);
-    } else {
-      // Other pages - create directory structure
-      const routeDir = path.join(distDir, route.slice(1)); // Remove leading slash
-      if (!fs.existsSync(routeDir)) {
-        fs.mkdirSync(routeDir, { recursive: true });
-      }
-      fs.writeFileSync(path.join(routeDir, 'index.html'), html);
+    // Create directory structure for sub-routes
+    const routeDir = path.join(distDir, route.slice(1)); // Remove leading slash
+    if (!fs.existsSync(routeDir)) {
+      fs.mkdirSync(routeDir, { recursive: true });
     }
+    fs.writeFileSync(path.join(routeDir, 'index.html'), html);
     
     console.log(`Generated static HTML for ${route}`);
   });

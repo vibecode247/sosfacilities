@@ -1,6 +1,6 @@
 import { SEOData } from '@/hooks/useSEO';
 
-const baseUrl = 'https://sosfacilities.lovable.app';
+const baseUrl = 'https://sosfacilities.com';
 const defaultImage = `${baseUrl}/lovable-uploads/df96f02f-f6fe-4050-9658-4c4e2a7bfc6d.png`;
 
 export const seoData: Record<string, SEOData> = {
