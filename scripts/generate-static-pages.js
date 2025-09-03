@@ -138,14 +138,6 @@ function generateStaticHTML(route, seoKey) {
     
     <!-- Load fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=PT+Sans:wght@400;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Redirect to SPA for user navigation -->
-    <script>
-      // Redirect users to the main SPA while preserving social scraper access
-      if (typeof window !== 'undefined' && window.navigator && !window.navigator.userAgent.includes('bot')) {
-        window.location.replace('/');
-      }
-    </script>
   </head>
   <body>
     <div id="root">
@@ -175,11 +167,36 @@ function generateStaticPages() {
     builtIndexContent = fs.readFileSync(builtIndexPath, 'utf8');
   }
   
-  // Generate HTML files for each route (except home)
+  // Generate HTML files for each route
   Object.entries(routes).forEach(([route, seoKey]) => {
     if (route === '/') {
-      // Skip home page - don't overwrite the built index.html
-      console.log('Skipping home page to preserve built React app');
+      // For home page, enhance the existing built index.html with SEO meta tags
+      if (builtIndexContent) {
+        const seo = seoData[seoKey];
+        let enhancedHtml = builtIndexContent;
+        
+        // Replace or add OG image meta tag
+        const ogImageRegex = /<meta property="og:image" content="[^"]*" \/>/;
+        const newOgImageTag = `<meta property="og:image" content="${seo.ogImage}" />`;
+        
+        if (ogImageRegex.test(enhancedHtml)) {
+          enhancedHtml = enhancedHtml.replace(ogImageRegex, newOgImageTag);
+        } else {
+          // Add before closing </head>
+          enhancedHtml = enhancedHtml.replace('</head>', `    ${newOgImageTag}\n  </head>`);
+        }
+        
+        // Replace Twitter image meta tag
+        const twitterImageRegex = /<meta property="twitter:image" content="[^"]*" \/>/;
+        const newTwitterImageTag = `<meta property="twitter:image" content="${seo.ogImage}" />`;
+        
+        if (twitterImageRegex.test(enhancedHtml)) {
+          enhancedHtml = enhancedHtml.replace(twitterImageRegex, newTwitterImageTag);
+        }
+        
+        fs.writeFileSync(builtIndexPath, enhancedHtml);
+        console.log('Enhanced home page with updated OG image');
+      }
       return;
     }
     
