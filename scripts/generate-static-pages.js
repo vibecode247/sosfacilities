@@ -104,6 +104,7 @@ function generateStaticHTML(route, seoKey) {
     <meta property="og:title" content="${seo.title}" />
     <meta property="og:description" content="${seo.description}" />
     <meta property="og:image" content="${seo.ogImage}" />
+    <meta property="og:image:secure_url" content="${seo.ogImage}" />
     <meta property="og:image:alt" content="${seo.title}" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -112,14 +113,14 @@ function generateStaticHTML(route, seoKey) {
     <meta property="og:locale" content="en_IN" />
     
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="${seo.canonical}" />
-    <meta property="twitter:title" content="${seo.title}" />
-    <meta property="twitter:description" content="${seo.description}" />
-    <meta property="twitter:image" content="${seo.ogImage}" />
-    <meta property="twitter:image:alt" content="${seo.title}" />
-    <meta property="twitter:site" content="@SOSFacilities" />
-    <meta property="twitter:creator" content="@SOSFacilities" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="${seo.canonical}" />
+    <meta name="twitter:title" content="${seo.title}" />
+    <meta name="twitter:description" content="${seo.description}" />
+    <meta name="twitter:image" content="${seo.ogImage}" />
+    <meta name="twitter:image:alt" content="${seo.title}" />
+    <meta name="twitter:site" content="@SOSFacilities" />
+    <meta name="twitter:creator" content="@SOSFacilities" />
     
     <!-- Favicon -->
     <link rel="icon" href="/lovable-uploads/bceb7b13-ddf8-44ae-a53c-c25b4ab49fce.png" type="image/png">
@@ -187,8 +188,8 @@ function generateStaticPages() {
         }
         
         // Replace Twitter image meta tag
-        const twitterImageRegex = /<meta property="twitter:image" content="[^"]*" \/>/;
-        const newTwitterImageTag = `<meta property="twitter:image" content="${seo.ogImage}" />`;
+        const twitterImageRegex = /<meta name="twitter:image" content="[^"]*" \/>/;
+        const newTwitterImageTag = `<meta name="twitter:image" content="${seo.ogImage}" />`;
         
         if (twitterImageRegex.test(enhancedHtml)) {
           enhancedHtml = enhancedHtml.replace(twitterImageRegex, newTwitterImageTag);
