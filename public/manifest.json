@@ -1,0 +1,23 @@
+{
+  "name": "SOS Facilities - Professional Housekeeping Services",
+  "short_name": "SOS Facilities",
+  "description": "Professional housekeeping, cleaning services, and workforce management in Coimbatore",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0EA5E9",
+  "icons": [
+    {
+      "src": "/lovable-uploads/bceb7b13-ddf8-44ae-a53c-c25b4ab49fce.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/lovable-uploads/bceb7b13-ddf8-44ae-a53c-c25b4ab49fce.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
