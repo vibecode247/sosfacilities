@@ -29,7 +29,6 @@ const ContactFormSection = () => {
   const onSubmit = async (data: ContactFormData) => {
     try {
       // Simulate form submission
-      console.log('Contact form submitted:', data);
       
       toast({
         title: "Message Sent",

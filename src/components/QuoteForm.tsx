@@ -32,7 +32,6 @@ const QuoteForm = () => {
   const onSubmit = async (data: QuoteFormData) => {
     try {
       // Simulate form submission
-      console.log('Quote form submitted:', data);
       
       toast({
         title: "Quote Request Submitted",
