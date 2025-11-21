@@ -123,7 +123,8 @@ function generateStaticHTML(route, seoKey) {
     <meta name="twitter:creator" content="@SOSFacilities" />
     
     <!-- Favicons -->
-    <link rel="icon" href="/lovable-uploads/bceb7b13-ddf8-44ae-a53c-c25b4ab49fce.png" type="image/png" sizes="any">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/lovable-uploads/bceb7b13-ddf8-44ae-a53c-c25b4ab49fce.png">
     <link rel="manifest" href="/manifest.json">
     
