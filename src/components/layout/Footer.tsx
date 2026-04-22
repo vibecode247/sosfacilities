@@ -1,16 +1,17 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Phone, Mail, MapPin } from "lucide-react";
 const Footer = () => {
-  return <footer className="bg-gradient-to-br from-secondary-600 via-secondary-500 to-primary-600 text-white">
+  return (
+    <footer className="bg-gradient-to-br from-secondary-600 via-secondary-500 to-primary-600 text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <span className="font-bold font-oswald text-2xl">SOS Facilities</span>
+            <span className="font-bold font-oswald text-2xl">SOS Facility Management Services</span>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Professional cleaning and housekeeping services in Coimbatore, Tamil Nadu. 
-              ISO 9001:2015 certified for quality excellence.
+              Professional cleaning and housekeeping services in Coimbatore, Tamil Nadu. ISO 9001:2015 certified for
+              quality excellence.
             </p>
           </div>
 
@@ -18,9 +19,21 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">About</Link></li>
-              <li><Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link></li>
-              <li><Link to="/careers" className="text-gray-300 hover:text-white transition-colors">Careers</Link></li>
+              <li>
+                <Link to="/about" className="text-gray-300 hover:text-white transition-colors">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-gray-300 hover:text-white transition-colors">
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link to="/careers" className="text-gray-300 hover:text-white transition-colors">
+                  Careers
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -60,6 +73,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>;
+    </footer>
+  );
 };
 export default Footer;
