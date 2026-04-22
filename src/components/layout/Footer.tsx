@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <span className="font-bold font-oswald text-2xl">SOS Facility Management Services</span>
+            <span className="font-bold font-oswald text-2xl">SOS Facilities</span>
             <p className="text-gray-300 text-sm leading-relaxed">
               Professional cleaning and housekeeping services in Coimbatore, Tamil Nadu. ISO 9001:2015 certified for
               quality excellence.
