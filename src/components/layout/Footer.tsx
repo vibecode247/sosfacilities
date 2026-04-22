@@ -69,7 +69,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-600 mt-8 pt-8 text-center">
           <p className="text-gray-300 text-sm">
-            © 2024 SOS Facilities. All rights reserved. | Designed for excellence in Coimbatore.
+            © 2024 SOS Facility Management Services. All rights reserved. | Designed for excellence in Coimbatore.
           </p>
         </div>
       </div>
